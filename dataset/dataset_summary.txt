@@ -1,0 +1,79 @@
+=== Dataset Generation Complete ===
+Users: 100 records
+Products: 818 records (100 per category)
+Orders: 2000 records
+Order Items: 29818 records
+
+Substitution tracking:
+  Products with similar variants: 131
+  Total similar products created: 217
+  Items marked as substituted in orders: 3032
+
+Average items per order: 14.9
+Product category distribution:
+category
+Dairy             103
+Snacks            103
+Beverages         103
+Produce           102
+Meat & Seafood    102
+Bakery            102
+Pantry Staples    102
+Household         101
+Name: count, dtype: int64
+
+Price range by category:
+                 min    max   mean
+category
+Bakery          1.99   8.00   3.80
+Beverages       0.10   4.76   1.63
+Dairy           0.99  15.99   4.52
+Household       1.29  29.99   6.90
+Meat & Seafood  1.50  30.34  10.18
+Pantry Staples  0.50  11.94   4.76
+Produce         0.75   7.21   2.86
+Snacks          0.89   6.99   3.47
+
+Files generated:
+- users.csv
+- products.csv
+- orders.csv
+- order_items.csv
+Saving datasets to CSV files...
+
+=== Dataset Generation Complete ===
+Users: 100 records
+Products: 818 records (100 per category)
+Orders: 2000 records
+Order Items: 29818 records
+
+Average items per order: 14.9
+Product category distribution:
+category
+Dairy             103
+Snacks            103
+Beverages         103
+Produce           102
+Meat & Seafood    102
+Bakery            102
+Pantry Staples    102
+Household         101
+Name: count, dtype: int64
+
+Price range by category:
+                 min    max   mean
+category
+Bakery          1.99   8.00   3.80
+Beverages       0.10   4.76   1.63
+Dairy           0.99  15.99   4.52
+Household       1.29  29.99   6.90
+Meat & Seafood  1.50  30.34  10.18
+Pantry Staples  0.50  11.94   4.76
+Produce         0.75   7.21   2.86
+Snacks          0.89   6.99   3.47
+
+Files generated:
+- users.csv
+- products.csv
+- orders.csv
+- order_items.csv

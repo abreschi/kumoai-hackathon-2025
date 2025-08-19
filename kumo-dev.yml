@@ -1,0 +1,19 @@
+name: kumo-dev
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pandas
+  - numpy
+  - tqdm
+  - graphviz
+  - python-graphviz
+  - ipywidgets
+  - jupyter_contrib_nbextensions
+  - jupyterlab
+  - pip
+  - pip:
+    - faker>=19.0.0
+    - openai>=1.0.0
+    - kumoai
