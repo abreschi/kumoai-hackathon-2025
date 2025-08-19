@@ -438,7 +438,7 @@ def generate_orders(users_df):
             'user_id': user_id,
             'order_timestamp': target_date,
             'delivery_method': random.choice(delivery_methods),
-            'delivery_time_window': random.choice(time_windows)
+            'delivery_window': random.choice(time_windows)
         })
     
     return pd.DataFrame(orders)
@@ -512,16 +512,19 @@ def generate_order_items(orders_df, products_df, users_df):
         selected_products = set()
         
         # Start with some random products
-        random_products = random.sample(products_df['product_id'].tolist(), 
-                                      min(basket_size // 2, len(products_df)))
+        random_products = random.sample(
+            products_df.drop_duplicates('product_name')['product_id'].tolist(), 
+            min(basket_size // 2, len(products_df))
+        )
         selected_products.update(random_products)
         
         # Add products based on affinities
         for group_name, group_products in affinity_groups.items():
             if any(p in selected_products for p in group_products):
                 # If we already have a product from this group, add more from the same group
-                additional = random.sample(group_products, 
-                                         min(random.randint(1, 3), len(group_products)))
+                additional = random.sample(
+                    group_products, 
+                    min(random.randint(1, 3), len(group_products)))
                 selected_products.update(additional)
         
         # Ensure we have enough products
@@ -552,7 +555,7 @@ def generate_order_items(orders_df, products_df, users_df):
             
             # Determine substitution - use substitution map if available
             was_substituted = False
-            if random.random() < 0.05:  # 5% substitution rate
+            if random.random() < 0.1:  # 10% substitution rate
                 if product_id in substitution_map and substitution_map[product_id]:
                     # Smart substitution: replace with similar product
                     substitute_id = random.choice(substitution_map[product_id])
@@ -574,10 +577,10 @@ def main():
     print("Starting grocery shopping dataset generation...")
     
     # Configuration parameters
-    PRODUCTS_PER_CATEGORY = 50        # Configurable: products per category
-    BATCH_SIZE = 30                    # Configurable: batch size for API calls
-    SIMILAR_BATCH_PCT = 0.6           # Configurable: 60% of each batch selected for similarity
-    SIMILAR_SUBSET_PCT = 0.4          # Configurable: 40% of selected products get variants
+    PRODUCTS_PER_CATEGORY = 100        # Configurable: products per category
+    BATCH_SIZE = 35                    # Configurable: batch size for API calls
+    SIMILAR_BATCH_PCT = 0.6            # Configurable: 60% of each batch selected for similarity
+    SIMILAR_SUBSET_PCT = 0.4           # Configurable: 40% of selected products get variants
     
     print(f"Configuration:")
     print(f"  Products per category: {PRODUCTS_PER_CATEGORY}")
@@ -635,7 +638,7 @@ def main():
     print("- products.csv") 
     print("- orders.csv")
     print("- order_items.csv")
-
+    
     # Save to CSV files
     print("Saving datasets to CSV files...")
     users_df.to_csv('users.csv', index=False)
