@@ -1,0 +1,577 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Grocer - Hyper-Personalized Shopping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#059669',
+                        secondary: '#64748B',
+                        accent: '#F59E0B',
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-slate-50 font-inter">
+    <!-- @COMPONENT: App [root component with global state] -->
+    <div id="app" class="min-h-screen">
+        <!-- Header -->
+        <!-- @COMPONENT: Header [navigation and user switcher] -->
+        <header class="bg-white shadow-sm border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center">
+                        <h1 class="text-2xl font-bold text-primary">🛒 Smart Grocer</h1>
+                        <span class="ml-3 text-sm text-slate-600 bg-slate-100 px-2 py-1 rounded-full">Demo</span>
+                    </div>
+                    
+                    <!-- @COMPONENT: UserProfileSwitcher [user selection dropdown] -->
+                    <div class="flex items-center space-x-4">
+                        <label for="userSelect" class="text-sm font-medium text-slate-700">Active User:</label>
+                        <select id="userSelect" data-bind="activeUserID" class="bg-white border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors">
+                            <!-- @MAP: users.map(user => ( -->
+                            <option value="1" data-mock="true">1 - Sarah Chen (Busy Family)</option>
+                            <option value="2" data-mock="true">2 - Marcus Rivera (Vegan Athlete)</option>
+                            <option value="3" data-mock="true">3 - Emma Thompson (Senior Living)</option>
+                            <option value="4" data-mock="true">4 - David Kim (College Student)</option>
+                            <!-- @END_MAP )) -->
+                        </select>
+                        <button id="checkoutBtn" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors font-medium">
+                            Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- @END_COMPONENT: Header -->
+
+        <!-- Main Content -->
+        <!-- @COMPONENT: SmartCartView [main two-column layout] -->
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Left Column - Shopping Cart -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-xl font-semibold text-slate-800">Your Cart</h2>
+                            <button id="inspireMeBtn" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all font-medium flex items-center space-x-2">
+                                <span>✨</span>
+                                <span>Inspire Me</span>
+                            </button>
+                        </div>
+                        
+                        <!-- Cart Items Container -->
+                        <div id="cartItems" class="space-y-4">
+                            <!-- @MAP: cartItems.map(item => ( -->
+                            <!-- @COMPONENT: CartItem [cart item with quantity controls] -->
+                            <div class="flex items-center justify-between p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors" data-mock="true">
+                                <div class="flex-1">
+                                    <h3 class="font-medium text-slate-800" data-bind="item.name">Organic Whole Milk (Gallon)</h3>
+                                    <p class="text-slate-600 text-sm" data-bind="item.price">$4.99 each</p>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="flex items-center border border-slate-300 rounded-lg">
+                                        <button class="px-3 py-1 hover:bg-slate-100 transition-colors" data-event="click:decrementQuantity">-</button>
+                                        <span class="px-3 py-1 border-x border-slate-300" data-bind="item.quantity">2</span>
+                                        <button class="px-3 py-1 hover:bg-slate-100 transition-colors" data-event="click:incrementQuantity">+</button>
+                                    </div>
+                                    <span class="font-medium text-slate-800 w-16 text-right" data-bind="item.total">$9.98</span>
+                                    <button class="text-red-500 hover:text-red-700 transition-colors" data-event="click:removeItem">🗑️</button>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors" data-mock="true">
+                                <div class="flex-1">
+                                    <h3 class="font-medium text-slate-800">Cheerios Family Size</h3>
+                                    <p class="text-slate-600 text-sm">$5.50 each</p>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="flex items-center border border-slate-300 rounded-lg">
+                                        <button class="px-3 py-1 hover:bg-slate-100 transition-colors">-</button>
+                                        <span class="px-3 py-1 border-x border-slate-300">1</span>
+                                        <button class="px-3 py-1 hover:bg-slate-100 transition-colors">+</button>
+                                    </div>
+                                    <span class="font-medium text-slate-800 w-16 text-right">$5.50</span>
+                                    <button class="text-red-500 hover:text-red-700 transition-colors">🗑️</button>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors" data-mock="true">
+                                <div class="flex-1">
+                                    <h3 class="font-medium text-slate-800">Chicken Breast Pack</h3>
+                                    <p class="text-slate-600 text-sm">$9.99 each</p>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="flex items-center border border-slate-300 rounded-lg">
+                                        <button class="px-3 py-1 hover:bg-slate-100 transition-colors">-</button>
+                                        <span class="px-3 py-1 border-x border-slate-300">2</span>
+                                        <button class="px-3 py-1 hover:bg-slate-100 transition-colors">+</button>
+                                    </div>
+                                    <span class="font-medium text-slate-800 w-16 text-right">$19.98</span>
+                                    <button class="text-red-500 hover:text-red-700 transition-colors">🗑️</button>
+                                </div>
+                            </div>
+                            <!-- @END_MAP )) -->
+                            <!-- @END_COMPONENT: CartItem -->
+                        </div>
+                        
+                        <!-- Cart Total -->
+                        <div class="mt-6 pt-6 border-t border-slate-200">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-semibold text-slate-800">Total:</span>
+                                <span class="text-2xl font-bold text-primary" id="cartTotal" data-bind="cart.total">$35.46</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Recommendations -->
+                <div class="lg:col-span-1">
+                    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                        <h2 class="text-xl font-semibold text-slate-800 mb-6">Recommended for You</h2>
+                        <div class="space-y-4" id="recommendations">
+                            <!-- @MAP: recommendations.map(product => ( -->
+                            <!-- @COMPONENT: ProductCard [recommendation card with add button] -->
+                            <div class="border border-slate-200 rounded-lg p-4 hover:shadow-md transition-shadow" data-mock="true">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="font-medium text-slate-800" data-bind="product.name">Kerrygold Butter</h3>
+                                    <span class="text-primary font-bold" data-bind="product.price">$4.99</span>
+                                </div>
+                                <p class="text-sm text-slate-600 mb-3">Often bought with your current items</p>
+                                <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-emerald-700 transition-colors font-medium" data-event="click:addToCart">
+                                    Add to Cart
+                                </button>
+                            </div>
+                            
+                            <div class="border border-slate-200 rounded-lg p-4 hover:shadow-md transition-shadow" data-mock="true">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="font-medium text-slate-800">Fresh Bananas</h3>
+                                    <span class="text-primary font-bold">$2.49</span>
+                                </div>
+                                <p class="text-sm text-slate-600 mb-3">Great for breakfast cereals</p>
+                                <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-emerald-700 transition-colors font-medium">
+                                    Add to Cart
+                                </button>
+                            </div>
+                            
+                            <div class="border border-slate-200 rounded-lg p-4 hover:shadow-md transition-shadow" data-mock="true">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="font-medium text-slate-800">Organic Eggs (12 pack)</h3>
+                                    <span class="text-primary font-bold">$3.99</span>
+                                </div>
+                                <p class="text-sm text-slate-600 mb-3">Perfect for family meals</p>
+                                <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-emerald-700 transition-colors font-medium">
+                                    Add to Cart
+                                </button>
+                            </div>
+                            <!-- @END_MAP )) -->
+                            <!-- @END_COMPONENT: ProductCard -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- @END_COMPONENT: SmartCartView -->
+
+        <!-- Inspire Me Modal -->
+        <!-- @COMPONENT: InspireMeModal [recipe suggestions overlay] -->
+        <div id="inspireMeModal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50 hidden">
+            <div class="flex items-center justify-center min-h-screen p-4">
+                <div class="bg-white rounded-xl shadow-xl max-w-4xl w-full max-h-[80vh] overflow-hidden">
+                    <div class="p-6 border-b border-slate-200">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-2xl font-bold text-slate-800">✨ Recipe Inspiration</h2>
+                            <button id="closeModal" class="text-slate-500 hover:text-slate-700 transition-colors text-2xl">×</button>
+                        </div>
+                        <p class="text-slate-600 mt-2">Based on items in your cart, here are some delicious recipes you can make:</p>
+                    </div>
+                    <div class="p-6 overflow-y-auto max-h-[calc(80vh-120px)]">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="recipeCards">
+                            <!-- @MAP: recipes.map(recipe => ( -->
+                            <!-- @COMPONENT: RecipeCard [recipe with missing ingredients] -->
+                            <div class="border border-slate-200 rounded-lg p-6 hover:shadow-md transition-shadow" data-mock="true">
+                                <h3 class="text-lg font-semibold text-slate-800 mb-3" data-bind="recipe.title">Creamy Chicken & Rice Casserole</h3>
+                                <p class="text-slate-600 mb-4">A comforting family dinner that serves 6. Perfect for busy weeknights!</p>
+                                <div class="mb-4">
+                                    <h4 class="font-medium text-slate-700 mb-2">You already have:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Chicken Breast</span>
+                                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Milk</span>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h4 class="font-medium text-slate-700 mb-2">Missing ingredients:</h4>
+                                    <div class="space-y-2" data-bind="recipe.missingItems">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-slate-600">White Rice</span>
+                                            <button class="text-primary hover:text-emerald-700 transition-colors text-sm font-medium">Add $2.49</button>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-slate-600">Mixed Vegetables</span>
+                                            <button class="text-primary hover:text-emerald-700 transition-colors text-sm font-medium">Add $3.29</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="w-full bg-accent text-white py-2 rounded-lg hover:bg-amber-600 transition-colors font-medium">
+                                    Add All Missing Items
+                                </button>
+                            </div>
+                            
+                            <div class="border border-slate-200 rounded-lg p-6 hover:shadow-md transition-shadow" data-mock="true">
+                                <h3 class="text-lg font-semibold text-slate-800 mb-3">Breakfast Parfait Bowl</h3>
+                                <p class="text-slate-600 mb-4">Start your day right with this nutritious and delicious breakfast option.</p>
+                                <div class="mb-4">
+                                    <h4 class="font-medium text-slate-700 mb-2">You already have:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Cheerios</span>
+                                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Milk</span>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h4 class="font-medium text-slate-700 mb-2">Missing ingredients:</h4>
+                                    <div class="space-y-2">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-slate-600">Greek Yogurt</span>
+                                            <button class="text-primary hover:text-emerald-700 transition-colors text-sm font-medium">Add $4.99</button>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-slate-600">Fresh Berries</span>
+                                            <button class="text-primary hover:text-emerald-700 transition-colors text-sm font-medium">Add $5.49</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="w-full bg-accent text-white py-2 rounded-lg hover:bg-amber-600 transition-colors font-medium">
+                                    Add All Missing Items
+                                </button>
+                            </div>
+                            <!-- @END_MAP )) -->
+                            <!-- @END_COMPONENT: RecipeCard -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: InspireMeModal -->
+
+        <!-- Checkout View -->
+        <!-- @COMPONENT: CheckoutView [order summary with delivery predictions] -->
+        <div id="checkoutView" class="fixed inset-0 bg-slate-50 z-40 hidden">
+            <div class="max-w-4xl mx-auto p-8">
+                <div class="bg-white rounded-xl shadow-lg border border-slate-200 p-8">
+                    <div class="mb-8">
+                        <button id="backToCart" class="text-primary hover:text-emerald-700 transition-colors font-medium mb-4">← Back to Cart</button>
+                        <h1 class="text-3xl font-bold text-slate-800">Checkout</h1>
+                        <p class="text-slate-600 mt-2">Review your order and delivery preferences</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Order Summary -->
+                        <div>
+                            <h2 class="text-xl font-semibold text-slate-800 mb-4">Order Summary</h2>
+                            <div class="space-y-3 mb-6">
+                                <div class="flex justify-between" data-mock="true">
+                                    <span>Organic Whole Milk (2x)</span>
+                                    <span>$9.98</span>
+                                </div>
+                                <div class="flex justify-between" data-mock="true">
+                                    <span>Cheerios Family Size (1x)</span>
+                                    <span>$5.50</span>
+                                </div>
+                                <div class="flex justify-between" data-mock="true">
+                                    <span>Chicken Breast Pack (2x)</span>
+                                    <span>$19.98</span>
+                                </div>
+                                <div class="border-t border-slate-200 pt-3 flex justify-between font-semibold">
+                                    <span>Subtotal:</span>
+                                    <span>$35.46</span>
+                                </div>
+                                <div class="flex justify-between text-sm text-slate-600">
+                                    <span>Delivery Fee:</span>
+                                    <span>$2.99</span>
+                                </div>
+                                <div class="flex justify-between text-lg font-bold text-primary">
+                                    <span>Total:</span>
+                                    <span>$38.45</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Delivery Options -->
+                        <div>
+                            <h2 class="text-xl font-semibold text-slate-800 mb-4">Delivery Options</h2>
+                            <div class="space-y-4" data-bind="deliveryPredictions">
+                                <div class="border border-primary bg-emerald-50 rounded-lg p-4" data-mock="true">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-medium text-slate-800">🚚 Home Delivery</span>
+                                        <span class="text-primary font-bold text-sm">RECOMMENDED</span>
+                                    </div>
+                                    <p class="text-slate-600 text-sm">Based on your shopping history</p>
+                                </div>
+                                
+                                <div class="border border-slate-300 rounded-lg p-4" data-mock="true">
+                                    <span class="font-medium text-slate-800">🏪 Store Pickup</span>
+                                    <p class="text-slate-600 text-sm">Ready in 2 hours</p>
+                                </div>
+                            </div>
+                            
+                            <h3 class="text-lg font-semibold text-slate-800 mt-6 mb-4">Delivery Time</h3>
+                            <div class="space-y-3">
+                                <div class="border border-primary bg-emerald-50 rounded-lg p-3" data-mock="true" data-bind="predicted_time_window">
+                                    <div class="flex items-center justify-between">
+                                        <span class="font-medium text-slate-800">Saturday 5pm-7pm</span>
+                                        <span class="text-primary font-bold text-sm">SUGGESTED</span>
+                                    </div>
+                                </div>
+                                <div class="border border-slate-300 rounded-lg p-3" data-mock="true">
+                                    <span class="text-slate-800">Sunday 9am-11am</span>
+                                </div>
+                                <div class="border border-slate-300 rounded-lg p-3" data-mock="true">
+                                    <span class="text-slate-800">Sunday 2pm-4pm</span>
+                                </div>
+                            </div>
+                            
+                            <button class="w-full mt-8 bg-primary text-white py-3 rounded-lg hover:bg-emerald-700 transition-colors font-semibold text-lg">
+                                Place Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: CheckoutView -->
+    </div>
+    <!-- @END_COMPONENT: App -->
+
+    <script>
+        (function() {
+            // @STATE: activeUserID:string = "1"
+            // @STATE: cartItems:array = []
+            // @STATE: recommendations:array = []
+            // @STATE: isInspireModalOpen:boolean = false
+            // @STATE: isCheckoutViewOpen:boolean = false
+            
+            // Mock Data Fixtures
+            const mockInitialCarts = {
+                "1": [
+                    { "id": 1, "name": "Organic Whole Milk (Gallon)", "quantity": 2, "price": 4.99 },
+                    { "id": 11, "name": "Cheerios Family Size", "quantity": 1, "price": 5.50 },
+                    { "id": 12, "name": "Chicken Breast Pack", "quantity": 2, "price": 9.99 }
+                ],
+                "2": [
+                    { "id": 13, "name": "Oatly Oat Milk", "quantity": 1, "price": 4.25 },
+                    { "id": 14, "name": "Firm Tofu", "quantity": 2, "price": 2.99 },
+                    { "id": 15, "name": "Quinoa (1lb)", "quantity": 1, "price": 6.99 }
+                ],
+                "3": [
+                    { "id": 16, "name": "Centrum Silver Vitamins", "quantity": 1, "price": 12.99 },
+                    { "id": 17, "name": "Whole Grain Bread", "quantity": 1, "price": 3.49 }
+                ],
+                "4": [
+                    { "id": 18, "name": "Instant Ramen (12-pack)", "quantity": 2, "price": 4.99 },
+                    { "id": 19, "name": "Peanut Butter", "quantity": 1, "price": 3.99 }
+                ]
+            };
+            
+            const mockRecommendations = {
+                "1": [
+                    { "id": 5, "name": "Kerrygold Butter", "price": 4.99, "reason": "Often bought with your current items" },
+                    { "id": 6, "name": "Fresh Bananas", "price": 2.49, "reason": "Great for breakfast cereals" },
+                    { "id": 7, "name": "Organic Eggs (12 pack)", "price": 3.99, "reason": "Perfect for family meals" }
+                ],
+                "2": [
+                    { "id": 8, "name": "Organic Baby Spinach", "price": 3.50, "reason": "High in protein for athletes" },
+                    { "id": 9, "name": "Almond Butter", "price": 8.99, "reason": "Great plant-based protein" },
+                    { "id": 10, "name": "Chia Seeds", "price": 5.49, "reason": "Perfect for smoothies" }
+                ],
+                "3": [
+                    { "id": 20, "name": "Low-Sodium Soup", "price": 2.99, "reason": "Heart-healthy option" },
+                    { "id": 21, "name": "Prunes", "price": 4.49, "reason": "Good for digestive health" }
+                ],
+                "4": [
+                    { "id": 22, "name": "Mac & Cheese", "price": 1.99, "reason": "Quick and affordable" },
+                    { "id": 23, "name": "Energy Drinks (4-pack)", "price": 6.99, "reason": "For those late study nights" }
+                ]
+            };
+            
+            const mockUsers = {
+                "1": { "name": "Sarah Chen", "profile": "Busy Family" },
+                "2": { "name": "Marcus Rivera", "profile": "Vegan Athlete" },
+                "3": { "name": "Emma Thompson", "profile": "Senior Living" },
+                "4": { "name": "David Kim", "profile": "College Student" }
+            };
+            
+            const mockDeliveryPredictions = {
+                "1": { "predicted_method": "delivery", "predicted_time_window": "Saturday 5pm-7pm" },
+                "2": { "predicted_method": "pickup", "predicted_time_window": "Sunday 9am-11am" },
+                "3": { "predicted_method": "delivery", "predicted_time_window": "Monday 10am-12pm" },
+                "4": { "predicted_method": "pickup", "predicted_time_window": "Friday 3pm-5pm" }
+            };
+            
+            // Global State
+            let activeUserID = "1";
+            let currentCart = [...mockInitialCarts[activeUserID]];
+            
+            // DOM Elements
+            const userSelect = document.getElementById('userSelect');
+            const cartItems = document.getElementById('cartItems');
+            const recommendations = document.getElementById('recommendations');
+            const cartTotal = document.getElementById('cartTotal');
+            const inspireMeBtn = document.getElementById('inspireMeBtn');
+            const inspireMeModal = document.getElementById('inspireMeModal');
+            const closeModal = document.getElementById('closeModal');
+            const checkoutBtn = document.getElementById('checkoutBtn');
+            const checkoutView = document.getElementById('checkoutView');
+            const backToCart = document.getElementById('backToCart');
+            
+            // Calculate cart total
+            function calculateCartTotal() {
+                return currentCart.reduce((total, item) => total + (item.price * item.quantity), 0);
+            }
+            
+            // Update cart display
+            function updateCartDisplay() {
+                cartItems.innerHTML = '';
+                
+                currentCart.forEach((item, index) => {
+                    const cartItemElement = document.createElement('div');
+                    cartItemElement.className = 'flex items-center justify-between p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors';
+                    cartItemElement.innerHTML = `
+                        <div class="flex-1">
+                            <h3 class="font-medium text-slate-800">${item.name}</h3>
+                            <p class="text-slate-600 text-sm">$${item.price.toFixed(2)} each</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="flex items-center border border-slate-300 rounded-lg">
+                                <button class="px-3 py-1 hover:bg-slate-100 transition-colors" onclick="changeQuantity(${index}, -1)">-</button>
+                                <span class="px-3 py-1 border-x border-slate-300">${item.quantity}</span>
+                                <button class="px-3 py-1 hover:bg-slate-100 transition-colors" onclick="changeQuantity(${index}, 1)">+</button>
+                            </div>
+                            <span class="font-medium text-slate-800 w-16 text-right">$${(item.price * item.quantity).toFixed(2)}</span>
+                            <button class="text-red-500 hover:text-red-700 transition-colors" onclick="removeItem(${index})">🗑️</button>
+                        </div>
+                    `;
+                    cartItems.appendChild(cartItemElement);
+                });
+                
+                cartTotal.textContent = `$${calculateCartTotal().toFixed(2)}`;
+            }
+            
+            // Update recommendations display
+            function updateRecommendationsDisplay() {
+                recommendations.innerHTML = '';
+                const userRecommendations = mockRecommendations[activeUserID] || [];
+                
+                userRecommendations.forEach(product => {
+                    const productElement = document.createElement('div');
+                    productElement.className = 'border border-slate-200 rounded-lg p-4 hover:shadow-md transition-shadow';
+                    productElement.innerHTML = `
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-medium text-slate-800">${product.name}</h3>
+                            <span class="text-primary font-bold">$${product.price.toFixed(2)}</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-3">${product.reason}</p>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-emerald-700 transition-colors font-medium" onclick="addToCart(${product.id}, '${product.name}', ${product.price})">
+                            Add to Cart
+                        </button>
+                    `;
+                    recommendations.appendChild(productElement);
+                });
+            }
+            
+            // Change user
+            function changeUser(newUserID) {
+                activeUserID = newUserID;
+                currentCart = [...mockInitialCarts[activeUserID]];
+                updateCartDisplay();
+                updateRecommendationsDisplay();
+                
+                // Update user display with smooth transition
+                userSelect.style.opacity = '0.5';
+                setTimeout(() => {
+                    userSelect.value = activeUserID;
+                    userSelect.style.opacity = '1';
+                }, 150);
+            }
+            
+            // Add item to cart
+            window.addToCart = function(id, name, price) {
+                const existingItem = currentCart.find(item => item.id === id);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    currentCart.push({ id, name, quantity: 1, price });
+                }
+                updateCartDisplay();
+            };
+            
+            // Change quantity
+            window.changeQuantity = function(index, change) {
+                if (currentCart[index]) {
+                    currentCart[index].quantity += change;
+                    if (currentCart[index].quantity <= 0) {
+                        currentCart.splice(index, 1);
+                    }
+                    updateCartDisplay();
+                }
+            };
+            
+            // Remove item
+            window.removeItem = function(index) {
+                currentCart.splice(index, 1);
+                updateCartDisplay();
+            };
+            
+            // Event Listeners
+            userSelect.addEventListener('change', (e) => {
+                changeUser(e.target.value);
+            });
+            
+            inspireMeBtn.addEventListener('click', () => {
+                inspireMeModal.classList.remove('hidden');
+            });
+            
+            closeModal.addEventListener('click', () => {
+                inspireMeModal.classList.add('hidden');
+            });
+            
+            checkoutBtn.addEventListener('click', () => {
+                checkoutView.classList.remove('hidden');
+            });
+            
+            backToCart.addEventListener('click', () => {
+                checkoutView.classList.add('hidden');
+            });
+            
+            // Close modal when clicking outside
+            inspireMeModal.addEventListener('click', (e) => {
+                if (e.target === inspireMeModal) {
+                    inspireMeModal.classList.add('hidden');
+                }
+            });
+            
+            // Initialize display
+            updateCartDisplay();
+            updateRecommendationsDisplay();
+            
+            // TODO: Implement CSV file parsing for products.csv and users.csv
+            // TODO: Implement real-time data binding for React components
+            // TODO: Add form validation for checkout process
+            // TODO: Implement persistent state management with local storage
+            // TODO: Add loading states for user switching transitions
+            // TODO: Implement accessibility features (keyboard navigation, screen reader support)
+            
+        })();
+    </script>
+</body>
+</html>
