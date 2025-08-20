@@ -238,7 +238,12 @@ export const AppProvider = ({ children }: AppProviderProps) => {
   };
 
   const addToCart = (product: MockProduct) => {
-    const existingItem = cartItems.find(item => item.product_name === product.product_name);
+    // Check for existing item by name, brand, and size to handle different sizes properly
+    const existingItem = cartItems.find(item => 
+      item.product_name === product.product_name && 
+      item.brand === product.brand && 
+      item.product_id === product.product_id
+    );
     if (existingItem) {
       updateCartItemQuantity(existingItem.id, existingItem.quantity + 1);
     } else {
@@ -249,7 +254,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
         brand: product.brand,
         price_per_unit: product.price_per_unit,
         quantity: 1,
-        allow_substitutions: undefined // Will be set by user in cart
+        allow_substitutions: false // Default to no substitutions for manually added items
       };
       setCartItems(prev => [...prev, newItem]);
     }

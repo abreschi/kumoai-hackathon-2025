@@ -15,7 +15,7 @@ interface CartItemProps {
 
 export const CartItem = ({ item, onQuantityChange, onRemove, onUpdateSubstitution }: CartItemProps) => {
   const { getSubstitutionRate } = useAppContext();
-  const [allowSubstitutions, setAllowSubstitutions] = useState<boolean>(item.allow_substitutions ?? true);
+  const [allowSubstitutions, setAllowSubstitutions] = useState<boolean>(item.allow_substitutions ?? false);
   
   // Get substitution rate from context (batch-loaded)
   const substitutionRate = getSubstitutionRate(item.product_id);
@@ -73,8 +73,8 @@ export const CartItem = ({ item, onQuantityChange, onRemove, onUpdateSubstitutio
         </div>
       </div>
       
-      {/* Substitution preference - always show, default based on rates */}
-      {substitutionRate !== null && (
+      {/* Substitution preference - show for all items with defined preferences or loaded rates */}
+      {(substitutionRate !== null || item.allow_substitutions !== undefined) && (
         <div className="flex items-center text-xs text-gray-600">
           <Checkbox
             id={`substitution-${item.id}`}

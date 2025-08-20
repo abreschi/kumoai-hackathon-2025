@@ -2,7 +2,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, Dialog
 import { Button } from "@/components/ui/button";
 import { useAppContext } from "@/contexts/AppContext";
 import { useToast } from "@/hooks/use-toast";
-import { Wand2, Loader2, CheckCircle, Heart, BookOpen } from "lucide-react";
+import { Wand2, Loader2, CheckCircle, Heart, BookOpen, RefreshCw } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export const InspireMeModal = () => {
@@ -14,7 +14,7 @@ export const InspireMeModal = () => {
 
   // Generate recipes only when modal first opens and clear added items
   useEffect(() => {
-    if (open && cartItems.length > 0 && aiGeneratedRecipes.length === 0) {
+    if (open && cartItems.length > 0) {
       generateRecipes();
     }
     if (open) {
@@ -22,22 +22,23 @@ export const InspireMeModal = () => {
     }
   }, [open]);
 
-  const handleAddItem = (itemName: string, price: number) => {
+  const handleAddItem = (product: any) => {
     addToCart({ 
-      product_id: Date.now(), 
-      product_name: itemName, 
-      price_per_unit: price,
-      category: "Grocery",
-      brand: "Fresh Market",
-      size: "1 unit",
-      unit: "unit"
+      product_id: product.product_id || Date.now(), 
+      product_name: product.product_name, 
+      price_per_unit: product.price_per_unit,
+      category: product.category || "Grocery",
+      brand: product.brand || "Fresh Market",
+      size: product.size || "1 unit",
+      unit: product.unit || "unit"
     });
     
-    // Add visual feedback
-    setAddedItems(prev => new Set([...Array.from(prev), itemName]));
+    // Add visual feedback using a unique identifier
+    const uniqueKey = `${product.product_name}-${product.brand}-${product.size}`;
+    setAddedItems(prev => new Set([...Array.from(prev), uniqueKey]));
     toast({
       title: "Added to cart!",
-      description: `${itemName} - $${price.toFixed(2)}`,
+      description: `${product.product_name} - $${product.price_per_unit.toFixed(2)}`,
       duration: 2000,
     });
     
@@ -45,7 +46,7 @@ export const InspireMeModal = () => {
     setTimeout(() => {
       setAddedItems(prev => {
         const newSet = new Set(prev);
-        newSet.delete(itemName);
+        newSet.delete(uniqueKey);
         return newSet;
       });
     }, 3000);
@@ -188,11 +189,11 @@ export const InspireMeModal = () => {
                                         <span className="text-muted-foreground">${option.price_per_unit.toFixed(2)}</span>
                                         <Button 
                                           size="sm" 
-                                          variant={addedItems.has(option.product_name) ? "default" : "outline"}
-                                          onClick={() => handleAddItem(option.product_name, option.price_per_unit)}
-                                          disabled={addedItems.has(option.product_name)}
+                                          variant={addedItems.has(`${option.product_name}-${option.brand}-${option.size}`) ? "default" : "outline"}
+                                          onClick={() => handleAddItem(option)}
+                                          disabled={addedItems.has(`${option.product_name}-${option.brand}-${option.size}`)}
                                         >
-                                          {addedItems.has(option.product_name) ? (
+                                          {addedItems.has(`${option.product_name}-${option.brand}-${option.size}`) ? (
                                             <>
                                               <CheckCircle className="w-3 h-3 mr-1" />
                                               Added
@@ -216,11 +217,11 @@ export const InspireMeModal = () => {
                                         <span className="text-muted-foreground">${ingredient.price_per_unit.toFixed(2)}</span>
                                         <Button 
                                           size="sm" 
-                                          variant={addedItems.has(ingredient.product_name) ? "default" : "outline"}
-                                          onClick={() => handleAddItem(ingredient.product_name, ingredient.price_per_unit)}
-                                          disabled={addedItems.has(ingredient.product_name)}
+                                          variant={addedItems.has(`${ingredient.product_name}-${ingredient.brand}-${ingredient.size}`) ? "default" : "outline"}
+                                          onClick={() => handleAddItem(ingredient)}
+                                          disabled={addedItems.has(`${ingredient.product_name}-${ingredient.brand}-${ingredient.size}`)}
                                         >
-                                          {addedItems.has(ingredient.product_name) ? (
+                                          {addedItems.has(`${ingredient.product_name}-${ingredient.brand}-${ingredient.size}`) ? (
                                             <>
                                               <CheckCircle className="w-3 h-3 mr-1" />
                                               Added

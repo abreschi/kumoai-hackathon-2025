@@ -118,8 +118,8 @@ class SmartGrocerPredictor:
         """Predict cart items using Kumo RFM model"""
         if self.model and KUMO_AVAILABLE:
             try:
-                # First, predict how many items user will buy in next 10 days
-                quantity_query = f"PREDICT SUM(order_items.quantity, 0, 10, days) " + \
+                # First, predict how many items user will buy in next 20 days
+                quantity_query = f"PREDICT SUM(order_items.quantity, 0, 20, days) " + \
                                f"FOR users.user_id = {user_id}"
 
                 try:

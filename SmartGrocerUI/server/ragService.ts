@@ -21,7 +21,7 @@ async function loadProducts(): Promise<Product[]> {
   }
 
   try {
-    const csvPath = path.join(process.cwd(), 'client', 'src', 'data', 'products.csv');
+    const csvPath = path.join(process.cwd(), 'client', 'public', 'data', 'products.csv');
     const csvData = fs.readFileSync(csvPath, 'utf8');
     
     // Simple CSV parsing without Papa Parse
@@ -46,8 +46,26 @@ async function loadProducts(): Promise<Product[]> {
       }
     }
 
-    productsCache = products;
-    console.log(`Loaded ${productsCache.length} products for RAG matching`);
+    // Deduplicate products based on name, brand, and size (ignore price)
+    const deduplicationMap = new Map<string, Product>();
+    
+    products.forEach(product => {
+      // Create deduplication key from name, brand, and size
+      const key = `${product.product_name.toLowerCase().trim()}|${product.brand.toLowerCase().trim()}|${product.size.toLowerCase().trim()}`;
+      
+      if (!deduplicationMap.has(key)) {
+        deduplicationMap.set(key, product);
+      } else {
+        // Keep the product with the lower price if duplicates exist
+        const existingProduct = deduplicationMap.get(key)!;
+        if (product.price_per_unit < existingProduct.price_per_unit) {
+          deduplicationMap.set(key, product);
+        }
+      }
+    });
+
+    productsCache = Array.from(deduplicationMap.values());
+    console.log(`Loaded ${products.length} products, deduplicated to ${productsCache.length} products for RAG matching`);
     return productsCache;
   } catch (error) {
     console.error('Failed to load products for RAG:', error);
@@ -55,7 +73,7 @@ async function loadProducts(): Promise<Product[]> {
   }
 }
 
-// Simple text similarity function
+// Enhanced text similarity function with ingredient mapping
 function calculateSimilarity(text1: string, text2: string): number {
   const normalize = (text: string) => text.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim();
   
@@ -68,13 +86,38 @@ function calculateSimilarity(text1: string, text2: string): number {
   // Contains match
   if (normalized1.includes(normalized2) || normalized2.includes(normalized1)) return 0.8;
   
+  // Enhanced ingredient mapping for better matches
+  const ingredientMappings: { [key: string]: string[] } = {
+    'mixed nuts': ['nuts', 'peanuts', 'almonds', 'cashews'],
+    'dark chocolate': ['chocolate', 'cocoa'],
+    'nuts': ['peanuts', 'almonds', 'cashews', 'mixed'],
+    'chocolate': ['cocoa', 'dark', 'milk chocolate'],
+    'cheese': ['cheddar', 'mozzarella', 'parmesan'],
+    'herbs': ['basil', 'oregano', 'thyme', 'parsley'],
+    'spices': ['pepper', 'salt', 'paprika', 'cumin']
+  };
+  
+  // Check ingredient mappings
+  for (const [ingredient, synonyms] of Object.entries(ingredientMappings)) {
+    if (normalized1.includes(ingredient)) {
+      for (const synonym of synonyms) {
+        if (normalized2.includes(synonym)) return 0.7;
+      }
+    }
+    if (normalized2.includes(ingredient)) {
+      for (const synonym of synonyms) {
+        if (normalized1.includes(synonym)) return 0.7;
+      }
+    }
+  }
+  
   // Word overlap
   const words1 = normalized1.split(/\s+/);
   const words2 = normalized2.split(/\s+/);
   const commonWords = words1.filter(word => words2.includes(word));
   
   if (commonWords.length > 0) {
-    return 0.6 * (commonWords.length / Math.max(words1.length, words2.length));
+    return 0.5 * (commonWords.length / Math.max(words1.length, words2.length));
   }
   
   // Character similarity (basic)
@@ -84,7 +127,7 @@ function calculateSimilarity(text1: string, text2: string): number {
     if (normalized1[i] === normalized2[i]) matches++;
   }
   
-  return 0.3 * (matches / maxLength);
+  return 0.2 * (matches / maxLength);
 }
 
 // Find best matching products for an ingredient
@@ -105,9 +148,9 @@ export async function findMatchingProducts(ingredientName: string, maxResults: n
     )
   }));
   
-  // Sort by similarity score and return top matches
+  // Sort by similarity score and return top matches (lowered threshold)
   const matches = scoredProducts
-    .filter(item => item.score > 0.3) // Minimum similarity threshold
+    .filter(item => item.score > 0.2) // Lower minimum similarity threshold
     .sort((a, b) => b.score - a.score)
     .slice(0, maxResults)
     .map(item => item.product);

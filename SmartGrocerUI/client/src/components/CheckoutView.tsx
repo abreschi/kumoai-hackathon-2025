@@ -2,9 +2,10 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
+import { useToast } from "@/hooks/use-toast";
 
 import { useAppContext } from "@/contexts/AppContext";
-import { CreditCard, Clock, Calendar, Package } from "lucide-react";
+import { CreditCard, Clock, Calendar, Package, CheckCircle } from "lucide-react";
 import { useState, useEffect } from "react";
 
 interface CheckoutViewProps {
@@ -14,6 +15,7 @@ interface CheckoutViewProps {
 
 export const CheckoutView = ({ open, onOpenChange }: CheckoutViewProps) => {
   const { cartItems, cartTotal, deliveryPredictions, activeUserID } = useAppContext();
+  const { toast } = useToast();
   const [deliveryMethod, setDeliveryMethod] = useState(deliveryPredictions?.predicted_method || "delivery");
   const [isLoadingPreference, setIsLoadingPreference] = useState(false);
   const [deliveryTimes, setDeliveryTimes] = useState<any[]>([]);
@@ -93,14 +95,20 @@ export const CheckoutView = ({ open, onOpenChange }: CheckoutViewProps) => {
   };
 
   const handleCompleteOrder = () => {
-    // Handle order completion
-    alert("Order completed successfully!");
+    // Show success toast notification
+    toast({
+      title: "Order completed successfully!",
+      description: `${cartItems.length} items ordered for ${deliveryMethod === 'delivery' ? 'delivery' : 'pickup'} • Total: $${finalTotal.toFixed(2)}`,
+      duration: 5000,
+    });
+    
+    // Close the modal
     onOpenChange(false);
   };
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-4xl">
+      <DialogContent className="max-w-4xl w-full max-h-[90vh] overflow-y-auto mx-4 sm:mx-auto">
         <DialogHeader>
           <DialogTitle className="flex items-center">
             <CreditCard className="w-5 h-5 text-primary mr-2" />
@@ -108,11 +116,11 @@ export const CheckoutView = ({ open, onOpenChange }: CheckoutViewProps) => {
           </DialogTitle>
         </DialogHeader>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
           {/* Order Summary */}
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Order Summary</h3>
-            <div className="space-y-3 mb-6">
+            <div className="space-y-3 mb-4 max-h-60 lg:max-h-80 overflow-y-auto">
               {cartItems.map(item => (
                 <div key={item.id} className="border-b border-gray-100 pb-3 mb-3">
                   <div className="flex justify-between items-center">
@@ -203,7 +211,7 @@ export const CheckoutView = ({ open, onOpenChange }: CheckoutViewProps) => {
                 {isLoadingTimes ? (
                   <div className="text-sm text-gray-600">Loading optimal time slots...</div>
                 ) : (
-                  <div className="space-y-2">
+                  <div className="space-y-2 max-h-40 overflow-y-auto">
                     <RadioGroup value={selectedTimeSlot} onValueChange={setSelectedTimeSlot} className="space-y-2">
                       {deliveryTimes.map((slot, index) => (
                         <div key={`${slot.date_label}-${slot.time_window}`} 

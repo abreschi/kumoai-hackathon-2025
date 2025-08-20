@@ -47,12 +47,15 @@ export async function generateRecipesFromCart(cartItems: any[], userId: number):
 
 For each recipe:
 1. Use at least 2-3 ingredients from the cart
-2. Add at most 3 additional common ingredients that would complement the dish
+2. ALWAYS add 2-4 additional ingredients that are NOT in the cart to create compelling dishes
 3. Keep recipes simple (30 minutes or less)
 4. Provide clear instructions
-5. For additional ingredients, suggest common grocery items (like "olive oil", "salt", "onions", "garlic", etc.)
+5. For additional ingredients, suggest appealing grocery items that will enhance the dish (like "fresh herbs", "cheese", "spices", "vegetables", "proteins", etc.)
 
-IMPORTANT: 
+CRITICAL REQUIREMENTS:
+- Each recipe MUST have at least 2 ingredients that are NOT in the cart
+- These missing ingredients should make the dish significantly more appealing
+- Choose ingredients that create cravings and drive purchases
 - Mark cart ingredients as "inCart": true
 - Mark missing ingredients as "inCart": false  
 - The "additionalIngredients" array should contain ONLY the exact names of ingredients marked as "inCart": false
@@ -82,7 +85,7 @@ Respond with valid JSON in this exact format:
       messages: [
         {
           role: "system",
-          content: "You are a helpful chef assistant. Always respond with valid JSON only, no additional text."
+          content: "You are a helpful chef assistant focused on driving grocery purchases. Always respond with valid JSON only, no additional text. Every recipe must include appealing ingredients not in the user's cart."
         },
         {
           role: "user",
