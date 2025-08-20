@@ -1,0 +1,819 @@
+product_id,product_name,category,brand,size,unit,price_per_unit
+1,Local Farm Bananas,Produce,Local Farm,3 lbs,lb,3.53
+2,Local Farm Onions,Produce,Local Farm,1 lb,lb,1.46
+3,Green Choice Onions,Produce,Green Choice,3 lbs,lb,1.22
+4,Local Farm Onions,Produce,Local Farm,2 lbs,lb,4.19
+5,Local Farm Bananas,Produce,Local Farm,5 lbs,lb,3.76
+6,Green Choice Tomatoes,Produce,Green Choice,1 lb,lb,1.56
+7,Organic Valley Tomatoes,Produce,Organic Valley,1 lb,lb,5.17
+8,Organic Valley Lettuce,Produce,Organic Valley,2 lbs,lb,1.21
+9,Local Farm Onions,Produce,Local Farm,1 lb,lb,5.49
+10,Organic Valley Potatoes,Produce,Organic Valley,2 lbs,lb,4.33
+11,Local Farm Onions,Produce,Local Farm,5 lbs,lb,5.87
+12,Organic Valley Bananas,Produce,Organic Valley,2 lbs,lb,5.88
+13,Organic Valley Lettuce,Produce,Organic Valley,1 lb,lb,1.9
+14,Local Farm Onions,Produce,Local Farm,5 lbs,lb,5.01
+15,Organic Valley Carrots,Produce,Organic Valley,2 lbs,lb,4.94
+16,Fresh Market Lettuce,Produce,Fresh Market,1 lb,lb,5.29
+17,Organic Valley Bananas,Produce,Organic Valley,5 lbs,lb,2.75
+18,Organic Valley Bananas,Produce,Organic Valley,1 lb,lb,4.3
+19,Green Choice Carrots,Produce,Green Choice,3 lbs,lb,5.32
+20,Local Farm Carrots,Produce,Local Farm,5 lbs,lb,4.4
+21,Local Farm Apples,Produce,Local Farm,1 lb,lb,5.39
+22,Local Farm Bananas,Produce,Local Farm,3 lbs,lb,1.19
+23,Green Choice Carrots,Produce,Green Choice,3 lbs,lb,3.18
+24,Fresh Market Lettuce,Produce,Fresh Market,2 lbs,lb,2.27
+25,Green Choice Apples,Produce,Green Choice,2 lbs,lb,2.82
+26,Fresh Market Potatoes,Produce,Fresh Market,3 lbs,lb,4.12
+27,Fresh Market Potatoes,Produce,Fresh Market,3 lbs,lb,3.54
+28,Green Choice Carrots,Produce,Green Choice,5 lbs,lb,4.49
+29,Organic Valley Bananas,Produce,Organic Valley,5 lbs,lb,4.32
+30,Green Choice Potatoes,Produce,Green Choice,2 lbs,lb,4.08
+31,Local Farm Lettuce,Produce,Local Farm,1 lb,lb,2.52
+32,Organic Valley Lettuce,Produce,Organic Valley,3 lbs,lb,3.32
+33,Green Choice Potatoes,Produce,Green Choice,2 lbs,lb,3.56
+34,Organic Valley Potatoes,Produce,Organic Valley,1 lb,lb,2.42
+35,Local Farm Apples,Produce,Local Farm,2 lbs,lb,4.36
+36,Organic Valley Carrots,Produce,Organic Valley,1.8 lbs,lb,5.03
+37,Local Farm Onions,Produce,Local Farm,1 lb,lb,1.65
+38,Organic Local Farm Onions,Produce,Local Farm,1.4 lb,lb,1.44
+39,Natural Green Choice Carrots,Produce,Green Choice,3.7 lbs,lb,3.97
+40,Fresh Green Choice Carrots,Produce,Store Brand,2.9 lbs,lb,5.98
+41,Local Farm Carrots,Produce,Fresh Select,6.9 lbs,lb,5.11
+42,Local Farm Carrots,Produce,Fresh Select,7.3 lbs,lb,4.11
+43,Organic Valley Lettuce,Produce,Value Brand,2.0 lbs,lb,1.13
+44,Organic Valley Lettuce,Produce,Organic Valley,2 lbs,lb,1.21
+45,Organic Valley Tomatoes,Produce,Organic Valley,1.3 lb,lb,4.95
+46,Extra Local Farm Onions,Produce,Fresh Select,5.6 lbs,lb,7.21
+47,Premium Green Choice Apples,Produce,Store Brand,2.6 lbs,lb,3.58
+48,Premium Green Choice Apples,Produce,Green Choice,2 lbs,lb,3.58
+49,Organic Fuji Apples,Produce,Nature's Best,3 lb,lb,3.49
+50,California Navel Oranges,Produce,Sunshine Grocers,4 lb,lb,2.99
+51,Fresh Spinach Bunch,Produce,Green Valley,1 bunch,each,1.49
+52,Organic Cherry Tomatoes,Produce,Farm Fresh,1 pint,each,2.99
+53,Yellow Bell Peppers,Produce,Local Farm,2 count,each,1.29
+54,Baby Carrots,Produce,Nature's Best,16 oz,oz,1.49
+55,Ripe Avocados,Produce,Tropical Farms,4 count,each,0.99
+56,Fresh Lemons,Produce,Citrus Valley,2 lb,lb,1.49
+57,Organic Cucumbers,Produce,Garden Fresh,3 count,each,0.89
+58,Red Grapes,Produce,Vineyard Select,2 lb,lb,3.99
+59,Sweet Corn on Cob,Produce,Farm Fresh,4 ears,each,0.75
+60,Fresh Broccoli Crowns,Produce,Green Valley,1 bunch,each,1.49
+61,Organic Strawberries,Produce,Berry Best,1 lb,lb,3.49
+62,Kale Leaves,Produce,Nature's Best,1 bunch,each,1.99
+63,Red Onion,Produce,Farm Fresh,2 lb,lb,1.29
+64,Fresh Pineapple,Produce,Tropical Farms,1 each,each,3.99
+65,Organic Green Beans,Produce,Garden Fresh,1 lb,lb,2.49
+66,Sweet Bell Peppers,Produce,Local Farm,3 count,each,1.39
+67,Fresh Mushrooms,Produce,Nature's Best,8 oz,oz,2.49
+68,Cantaloupe Melon,Produce,Farm Fresh,1 each,each,3.29
+69,Red Radishes,Produce,Garden Valley,1 bunch,each,0.99
+70,Organic Asparagus,Produce,Green Valley,1 bunch,each,2.99
+71,Purple Eggplant,Produce,Farm Fresh,2 count,each,1.69
+72,Fresh Peaches,Produce,Sunny Farms,2 lb,lb,2.69
+73,Gala Apples,Produce,Vineyard Select,3 lb,lb,3.29
+74,Fresh Cauliflower,Produce,Green Valley,1 head,each,2.49
+75,Baby Spinach Pack,Produce,Nature's Best,5 oz,oz,2.09
+76,Organic Mangoes,Produce,Tropical Farms,2 count,each,1.99
+77,Fresh Plums,Produce,Sunny Farms,1.5 lb,lb,2.49
+78,Yellow Squash,Produce,Farm Fresh,2 count,each,1.29
+79,Red Cherry Tomatoes,Produce,Berry Best,1 pint,each,2.49
+80,Fresh Swiss Chard,Produce,Garden Valley,1 bunch,each,1.79
+81,Crisp Romaine Lettuce,Produce,Green Valley,1 head,each,1.49
+82,Green Zucchini,Produce,Farm Fresh,3 count,each,0.99
+83,Fresh Nectarines,Produce,Sunny Farms,2 lb,lb,2.89
+84,Purple Eggplant,Produce,Premium Choice,2 count,each,1.31
+85,Fresh Red Radishes,Produce,Fresh Select,1 bunch,each,1.08
+86,Baby Carrots,Produce,Premium Choice,16 oz,oz,1.49
+87,Baby Carrots,Produce,Premium Choice,16 oz,oz,1.49
+88,Fresh Organic Fuji Apples,Produce,Premium Choice,2.9 lb,lb,3.49
+89,Organic Fuji Apples,Produce,Fresh Select,3.8 lb,lb,3.48
+90,Organic Fresh Mushrooms,Produce,Premium Choice,11.3 oz,oz,2.16
+91,Fresh Mushrooms,Produce,Fresh Select,10.6 oz,oz,2.71
+92,Organic Cucumbers,Produce,Value Brand,2.9 count,each,0.99
+93,Baby Spinach Pack,Produce,Premium Choice,5.6 oz,oz,1.75
+94,Baby Spinach Pack,Produce,Value Brand,6.6 oz,oz,2.2
+95,Fresh Broccoli Crowns,Produce,Green Valley,1 bunch,each,1.37
+96,Fresh Broccoli Crowns,Produce,Green Valley,0.8 bunch,each,1.3
+97,Crisp Red Apples,Produce,Farm Fresh,3 lb,lb,2.49
+98,Organic Baby Carrots,Produce,Nature's Best,16 oz,oz,1.29
+99,Fresh Strawberries,Produce,Berry Delight,1 pint,each,3.99
+100,Vine-Ripened Tomatoes,Produce,Sunshine Farms,1 lb,lb,1.79
+101,Premium Vine-Ripened Tomatoes,Produce,Fresh Select,1.5 lb,lb,2.18
+102,Vine-Ripened Tomatoes,Produce,Store Brand,1.3 lb,lb,2.12
+103,Whole Milk,Dairy,DairyPure,1 gallon,gallon,3.49
+104,Cheddar Cheese,Dairy,Kraft,8 oz,oz,4.99
+105,Greek Yogurt,Dairy,Chobani,32 oz,oz,5.49
+106,Butter,Dairy,Land O'Lakes,16 oz,oz,3.89
+107,Cream Cheese,Dairy,Philadelphia,8 oz,oz,2.49
+108,Mozzarella Cheese,Dairy,Galbani,8 oz,oz,4.29
+109,Sour Cream,Dairy,Daisy,16 oz,oz,2.29
+110,Yogurt Tubes,Dairy,Yoplait,20 count,count,4.99
+111,Cream,Dairy,Organic Valley,16 oz,oz,2.79
+112,Parmesan Cheese,Dairy,Kraft,8 oz,oz,6.49
+113,Milk Alternative - Almond Milk,Dairy,Silk,64 fl oz,fl oz,3.99
+114,Cottage Cheese,Dairy,Daisy,16 oz,oz,2.69
+115,Ricotta Cheese,Dairy,Galbani,15 oz,oz,3.99
+116,Half & Half Cream,Dairy,Horizon,16 oz,oz,2.79
+117,Provolone Cheese,Dairy,Kraft,8 oz,oz,5.49
+118,Feta Cheese,Dairy,President,7 oz,oz,4.99
+119,Milk Powder,Dairy,Anchor,12 oz,oz,5.89
+120,Specialty Cheese Platter,Dairy,Deli Select,1 lb,lb,15.99
+121,Kefir Drink,Dairy,Lifeway,32 oz,oz,4.49
+122,Milk Buttermilk,Dairy,Organic Valley,16 oz,oz,2.29
+123,Swiss Cheese,Dairy,Kraft,8 oz,oz,5.99
+124,Ghee,Dairy,Ancient Organics,14 oz,oz,9.99
+125,Dairy-Free Yogurt,Dairy,Daiya,24 oz,oz,6.49
+126,Milk Snacks,Dairy,Yoo-hoo,6 oz,oz,1.29
+127,Processed Cheese Slices,Dairy,Sargento,16 oz,oz,4.59
+128,Mozzarella String Cheese,Dairy,Frigo,12 oz,oz,4.79
+129,Yogurt Drink,Dairy,Actimel,5.07 fl oz,fl oz,1.99
+130,Organic Raw Milk,Dairy,Organic Valley,1 gallon,gallon,6.99
+131,Lactose-Free Milk,Dairy,Lactaid,64 fl oz,fl oz,4.29
+132,Cheese Ball,Dairy,Kraft,8 oz,oz,6.99
+133,Creamy Blue Cheese,Dairy,Roth,6 oz,oz,7.49
+134,Milk Chocolate Milk,Dairy,Hershey's,8 fl oz,fl oz,1.49
+135,Yogurt Cups,Dairy,Danone,4 oz,oz,0.99
+136,Skim Milk,Dairy,Great Value,1 gallon,gallon,3.29
+137,Specialty Cheese Platter,Dairy,Fresh Select,1.2 lb,lb,13.41
+138,Milk Buttermilk,Dairy,Value Brand,16 oz,oz,2.46
+139,Milk Buttermilk,Dairy,Organic Valley,18.9 oz,oz,2.85
+140,Cheddar Cheese,Dairy,Premium Choice,11.0 oz,oz,4.99
+141,Premium Mozzarella String Cheese,Dairy,Fresh Select,12 oz,oz,4.77
+142,Original Mozzarella String Cheese,Dairy,Frigo,12 oz,oz,3.43
+143,Yogurt Tubes,Dairy,Yoplait,20 count,count,3.61
+144,Parmesan Cheese,Dairy,Fresh Select,8 oz,oz,6.82
+145,Fresh Parmesan Cheese,Dairy,Store Brand,8.7 oz,oz,4.95
+146,Dairy-Free Yogurt,Dairy,Fresh Select,24 oz,oz,6.31
+147,Extra Dairy-Free Yogurt,Dairy,Fresh Select,24 oz,oz,6.49
+148,Natural Swiss Cheese,Dairy,Value Brand,9.9 oz,oz,5.78
+149,Swiss Cheese,Dairy,Premium Choice,10.3 oz,oz,7.69
+150,Whole Milk,Dairy,DairyPure,1 gallon,each,3.49
+151,Cheddar Cheese Block,Dairy,Tillamook,8 oz,oz,4.99
+152,Greek Yogurt,Dairy,Chobani,32 oz,oz,5.49
+153,Butter Sticks,Dairy,Land O'Lakes,16 oz,oz,2.99
+154,Cream Cheese,Dairy,Philadelphia,8 oz,oz,2.49
+155,Mozzarella Cheese,Dairy,Sargento,8 oz,oz,4.29
+156,Skim Milk,Dairy,Silk,1 gallon,each,3.89
+157,Yogurt Assorted Pack,Dairy,Yoplait,24 oz,oz,4.49
+158,Parmesan Cheese,Dairy,Kraft,3 oz,oz,3.99
+159,Vanilla Greek Yogurt,Dairy,Fage,16 oz,oz,4.79
+160,Cottage Cheese,Dairy,Organic Valley,16 oz,oz,3.89
+161,Heavy Cream,Dairy,Horizon Organic,16 oz,oz,2.69
+162,Sour Cream,Dairy,Daisy,16 oz,oz,2.49
+163,Swiss Cheese Slices,Dairy,Boar's Head,8 oz,oz,5.49
+164,Feta Cheese,Dairy,President,6 oz,oz,4.59
+165,Kefir Drink,Dairy,Lifeway,32 oz,oz,4.99
+166,Ricotta Cheese,Dairy,Galbani,15 oz,oz,3.79
+167,Creamy Blue Cheese,Dairy,Maytag,6 oz,oz,6.49
+168,Gallon of Buttermilk,Dairy,Organic Valley,1 gallon,each,4.99
+169,String Cheese,Dairy,Sargento,10 oz,oz,5.29
+170,Milk Alternatives - Almond Milk,Dairy,Almond Breeze,64 oz,oz,3.99
+171,Milk Alternatives - Coconut Milk,Dairy,Thai Kitchen,13.5 oz,oz,2.99
+172,Mozzarella String Sticks,Dairy,Sargento,8 oz,oz,4.69
+173,Provolone Cheese,Dairy,Boar's Head,8 oz,oz,5.99
+174,Cream Top Yogurt,Dairy,Stonyfield,32 oz,oz,5.49
+175,Goat Cheese,Dairy,Cypress Grove,4 oz,oz,6.29
+176,Ice Cream Milk,Dairy,Häagen-Dazs,14 oz,oz,3.49
+177,Chocolate Milk,Dairy,Horizon Organic,64 oz,oz,3.69
+178,Lactose-Free Milk,Dairy,Lactaid,64 oz,oz,4.19
+179,Yogurt Drink,Dairy,Activia,20 oz,oz,2.99
+180,Organic Milk,Dairy,Stonyfield,1 gallon,each,4.89
+181,Paneer Cheese,Dairy,Gopi,8 oz,oz,4.49
+182,Extra Lactose-Free Milk,Dairy,Lactaid,90.6 oz,oz,4.19
+183,Cream Top Yogurt,Dairy,Premium Choice,32 oz,oz,4.83
+184,Cream Top Yogurt,Dairy,Stonyfield,28.9 oz,oz,4.98
+185,Fresh Swiss Cheese Slices,Dairy,Premium Choice,8 oz,oz,5.49
+186,Swiss Cheese Slices,Dairy,Fresh Select,10.6 oz,oz,6.52
+187,Paneer Cheese,Dairy,Store Brand,11.8 oz,oz,3.41
+188,Greek Yogurt,Dairy,Fresh Select,28.8 oz,oz,5.49
+189,Mozzarella Cheese,Dairy,Premium Choice,10.3 oz,oz,5.2
+190,Chocolate Milk,Dairy,Horizon Organic,64 oz,oz,3.69
+191,Premium Chocolate Milk,Dairy,Store Brand,81.9 oz,oz,3.09
+192,Whole Milk,Dairy,DairyPure,1 gallon,gallon,3.49
+193,Greek Yogurt,Dairy,Chobani,32 oz,oz,1.75
+194,Cheddar Cheese Block,Dairy,Kraft,8 oz,oz,2.99
+195,Cream Cheese,Dairy,Philadelphia,8 oz,oz,2.49
+196,Butter,Dairy,Land O Lakes,16 oz,oz,2.99
+197,Skim Milk,Dairy,Organic Valley,1 gallon,gallon,3.69
+198,Mozzarella Cheese,Dairy,Galbani,8 oz,oz,3.49
+199,Sour Cream,Dairy,Breakstone's,16 oz,oz,1.89
+200,Cottage Cheese,Dairy,Daisy,16 oz,oz,2.09
+201,Yogurt Multibox,Dairy,Yoplait,24 count,each,4.99
+202,Parmesan Cheese,Dairy,Kraft,8 oz,oz,4.49
+203,Parmesan Cheese,Dairy,Kraft,8.5 oz,oz,4.57
+204,Parmesan Cheese,Dairy,Kraft,6.8 oz,oz,4.49
+205,Cottage Cheese,Dairy,Value Brand,19.9 oz,oz,2.3
+206,Sourdough Baguette,Bakery,Baker's Choice,16 oz,oz,3.49
+207,Whole Wheat Bread,Bakery,Nature's Loaf,1 lb,lb,2.99
+208,Chocolate Chip Cookies,Bakery,Sweet Treats,12 oz,oz,4.79
+209,Croissants,Bakery,Paris Bakery,4 count,count,2.99
+210,Banana Muffins,Bakery,Morning Bakes,6 oz,oz,2.49
+211,Rye Bread,Bakery,Heritage Bakery,1 lb,lb,3.59
+212,Cinnamon Rolls,Bakery,Sweet Swirls,8 oz,oz,3.99
+213,Multigrain Loaf,Bakery,Healthy Bites,1 lb,lb,3.49
+214,Focaccia Bread,Bakery,Olive Grove,12 oz,oz,4.29
+215,Blueberry Scones,Bakery,Morning Bakes,6 oz,oz,2.99
+216,Dinner Rolls,Bakery,Baker's Choice,8 count,count,2.79
+217,Ciabatta Bread,Bakery,Artisan Loaves,16 oz,oz,3.79
+218,Pumpkin Bread,Bakery,Fall Treats,1 lb,lb,4.19
+219,Apple Turnovers,Bakery,Sweet Pastries,5 oz,oz,2.89
+220,Bagels (Plain),Bakery,Bagel Bliss,4 count,count,2.49
+221,Lemon Poppy Seed Muffins,Bakery,Bright Bakes,6 oz,oz,2.59
+222,Breadsticks,Bakery,Italian Bakery,8 oz,oz,2.49
+223,Pita Bread,Bakery,Mediterranean Breads,6 oz,oz,1.99
+224,Eclairs,Bakery,Pastry Delights,4 oz,oz,3.49
+225,Bread Pudding,Bakery,Home Bakes,8 oz,oz,3.99
+226,Sweet Potato Biscuits,Bakery,Southern Flavors,6 oz,oz,2.79
+227,Cheese Danish,Bakery,Danish Delights,5 oz,oz,3.69
+228,Garlic Naan,Bakery,Indian Breads,6 oz,oz,2.19
+229,Chocolate Babka,Bakery,European Bakery,12 oz,oz,5.49
+230,Oatmeal Cookies,Bakery,Healthy Snacks,10 oz,oz,3.99
+231,French Bread,Bakery,Parisian Bakery,16 oz,oz,3.39
+232,Banana Bread,Bakery,Home Bakes,8 oz,oz,3.59
+233,Apple Danish,Bakery,Danish Delights,5 oz,oz,3.89
+234,Pecan Sticky Buns,Bakery,Sweet Swirls,8 oz,oz,4.29
+235,Rustic Walnut Bread,Bakery,Rustic Loaves,1 lb,lb,4.49
+236,Cranberry Orange Muffins,Bakery,Bright Bakes,6 oz,oz,2.69
+237,Pumpkin Scones,Bakery,Fall Treats,6 oz,oz,2.99
+238,Herb Focaccia,Bakery,Olive Grove,12 oz,oz,4.39
+239,Lemon Tart,Bakery,Pastry Perfection,4 oz,oz,3.99
+240,Multigrain Loaf,Bakery,Store Brand,1 lb,lb,4.19
+241,Extra Multigrain Loaf,Bakery,Healthy Bites,1.4 lb,lb,2.84
+242,Natural Focaccia Bread,Bakery,Store Brand,13.3 oz,oz,4.89
+243,Apple Turnovers,Bakery,Sweet Pastries,4.5 oz,oz,3.71
+244,Apple Turnovers,Bakery,Sweet Pastries,5 oz,oz,3.45
+245,Organic Croissants,Bakery,Paris Bakery,3.5 count,count,2.99
+246,Croissants,Bakery,Paris Bakery,4 count,count,2.99
+247,Rustic Walnut Bread,Bakery,Fresh Select,1.2 lb,lb,4.96
+248,Rustic Walnut Bread,Bakery,Premium Choice,1.0 lb,lb,5.53
+249,Premium Banana Bread,Bakery,Fresh Select,8 oz,oz,3.39
+250,Garlic Naan,Bakery,Indian Breads,5.8 oz,oz,2.04
+251,Garlic Naan,Bakery,Indian Breads,6 oz,oz,2.3
+252,Original Herb Focaccia,Bakery,Fresh Select,12 oz,oz,4.39
+253,Herb Focaccia,Bakery,Fresh Select,11.6 oz,oz,5.66
+254,Whole Wheat Baguette,Bakery,Bakery Fresh,16 oz,oz,3.5
+255,Sourdough Bread Loaf,Bakery,Crust & Crumb,1 lb,lb,4.25
+256,Gluten-Free Multigrain Bread,Bakery,Healthy Eats,20 oz,oz,6.0
+257,Blueberry Muffins,Bakery,Sweet Bites,4 count,each,2.5
+258,Chocolate Chip Cookies,Bakery,Baker's Delight,12 oz,oz,5.0
+259,Cinnamon Rolls,Bakery,Morning Bakery,6 count,each,3.75
+260,Croissant Assortment,Bakery,Parisian Pastry,8 count,each,4.5
+261,Banana Nut Muffins,Bakery,Baker's Corner,4 count,each,3.0
+262,Rye Bread,Bakery,Old Town Bakery,1 lb,lb,4.0
+263,Dinner Rolls,Bakery,Family Bakery,12 count,each,3.0
+264,Pumpkin Bread,Bakery,Autumn Bakes,18 oz,oz,4.5
+265,Focaccia Bread,Bakery,Mediterranean Bakes,12 oz,oz,4.75
+266,Bakery-Style Bagels,Bakery,Daily Bagels,6 count,each,3.5
+267,Pita Bread,Bakery,Mediterranean Morsels,8 oz,oz,2.5
+268,Cheddar Cheese Biscuits,Bakery,Cheddar & More,8 oz,oz,4.0
+269,Apple Cinnamon Danish,Bakery,Sweet Danish,5 oz,oz,3.25
+270,Lemon Muffins,Bakery,Zesty Bakery,4 count,each,3.5
+271,Whole Grain Crackers,Bakery,Grain House,6 oz,oz,2.75
+272,Bakery Croissants,Bakery,Paris Pastry,4 count,each,4.0
+273,Oatmeal Raisin Cookies,Bakery,Oat & Raisin,10 oz,oz,4.25
+274,Pumpkin Muffins,Bakery,Autumn Flavors,4 count,each,3.5
+275,Herb Focaccia,Bakery,Mediterranean Bakes,12 oz,oz,4.75
+276,Chocolate Eclairs,Bakery,Sweet Pastry,4 count,each,3.75
+277,Multigrain Flatbread,Bakery,Healthy Crust,8 oz,oz,3.25
+278,Cranberry Walnut Bread,Bakery,Farmhouse Bakery,1 lb,lb,5.0
+279,Sesame Seed Bagels,Bakery,Daily Bagels,6 count,each,3.5
+280,Garlic Naan,Bakery,Indian Flavor,8 oz,oz,2.75
+281,Fig & Walnut Loaf,Bakery,Artisan Bakery,12 oz,oz,5.25
+282,Lemon Poppy Seed Muffins,Bakery,Zesty Bakery,4 count,each,3.5
+283,Sweet Banana Bread,Bakery,Home Bakes,16 oz,oz,4.0
+284,Chocolate Babka,Bakery,European Pastry,24 oz,oz,8.0
+285,Pumpkin Spice Muffins,Bakery,Autumn Bakery,4 count,each,3.5
+286,Almond Croissants,Bakery,Parisian Pastry,4 count,each,4.5
+287,Cranberry Walnut Bread,Bakery,Farmhouse Bakery,1 lb,lb,4.33
+288,Natural Cranberry Walnut Bread,Bakery,Farmhouse Bakery,1.4 lb,lb,6.1
+289,Garlic Naan,Bakery,Store Brand,6.7 oz,oz,2.79
+290,Extra Bakery-Style Bagels,Bakery,Premium Choice,5.3 count,each,4.44
+291,Fresh Bakery-Style Bagels,Bakery,Daily Bagels,6 count,each,3.8
+292,Banana Nut Muffins,Bakery,Store Brand,5.7 count,each,2.25
+293,Banana Nut Muffins,Bakery,Premium Choice,4 count,each,3.38
+294,Herb Focaccia,Bakery,Fresh Select,15.5 oz,oz,4.75
+295,Natural Herb Focaccia,Bakery,Mediterranean Bakes,12 oz,oz,4.61
+296,Rye Bread,Bakery,Store Brand,1.0 lb,lb,5.09
+297,Rye Bread,Bakery,Store Brand,1 lb,lb,3.03
+298,Oatmeal Raisin Cookies,Bakery,Premium Choice,10 oz,oz,5.2
+299,Sourdough Baguette,Bakery,Bakery Fresh,16 oz,oz,2.49
+300,Whole Wheat Bread,Bakery,Nature's Oven,1 lb,lb,3.29
+301,Cinnamon Rolls,Bakery,Sweet Roll Co.,4 count,count,5.99
+302,Multigrain Bagels,Bakery,Bagel Bliss,6 count,count,4.49
+303,Banana Muffins,Bakery,Morning Bakes,4 count,count,6.49
+304,Croissants,Bakery,Parisian Bakes,3 oz,oz,1.99
+305,Gluten-Free Banana Bread,Bakery,Healthy Bites,12 oz,oz,4.99
+306,Sourdough Baguette,Bakery,Value Brand,18.2 oz,oz,2.49
+307,Sourdough Baguette,Bakery,Store Brand,16 oz,oz,2.95
+308,Boneless Skinless Chicken Breast,Meat & Seafood,Farm Fresh,2 lb,lb,4.99
+309,Fresh Atlantic Salmon Fillet,Meat & Seafood,SeaBest,1 lb,lb,12.99
+310,Ground Beef 80% Lean,Meat & Seafood,Butcher's Choice,1.5 lb,lb,5.49
+311,Pork Chops Center Cut,Meat & Seafood,Country Farm,2 lb,lb,6.99
+312,Fresh Shrimp Prawns,Meat & Seafood,SeaFresh,1 lb,lb,10.99
+313,Turkey Breast Roast,Meat & Seafood,Farmstead,3 lb,lb,7.49
+314,Lamb Shoulder Roast,Meat & Seafood,Heritage Meats,2.5 lb,lb,9.99
+315,Beef Ribeye Steak,Meat & Seafood,PrimeCuts,16 oz,oz,14.49
+316,Chicken Drumsticks,Meat & Seafood,Farm Fresh,3 lb,lb,1.69
+317,Tilapia Fillets,Meat & Seafood,Ocean's Best,1 lb,lb,8.49
+318,Veal Cutlets,Meat & Seafood,Premium Meats,1.5 lb,lb,15.99
+319,Salmon Steaks,Meat & Seafood,SeaFresh,2 lb,lb,13.49
+320,Ground Turkey,Meat & Seafood,Farmstead,1 lb,lb,3.99
+321,Beef Sirloin Tips,Meat & Seafood,PrimeCuts,2 lb,lb,10.49
+322,Duck Breasts,Meat & Seafood,Gourmet Poultry,1.5 lb,lb,16.99
+323,Cod Fillets,Meat & Seafood,Ocean's Best,1 lb,lb,9.99
+324,Beef Stew Meat,Meat & Seafood,Butcher's Choice,2.5 lb,lb,7.99
+325,Lamb Chops,Meat & Seafood,Heritage Meats,1.5 lb,lb,12.49
+326,Pork Sausage Links,Meat & Seafood,Country Farm,1 lb,lb,4.59
+327,Crab Cakes,Meat & Seafood,SeaDelights,4 count,each,6.99
+328,Salmon Fillets,Meat & Seafood,SeaBest,1.5 lb,lb,14.49
+329,Beef Tenderloin Steak,Meat & Seafood,PrimeCuts,8 oz,oz,19.99
+330,Chicken Thighs Bone-In,Meat & Seafood,Farm Fresh,2.5 lb,lb,2.09
+331,Lobster Tails,Meat & Seafood,SeaDelights,2 count,each,25.99
+332,Venison Steaks,Meat & Seafood,Wild Game,1.5 lb,lb,22.49
+333,Tilapia Fillets,Meat & Seafood,Ocean's Best,2 lb,lb,8.99
+334,Pork Tenderloin,Meat & Seafood,Country Farm,1.5 lb,lb,9.49
+335,Chicken Wings,Meat & Seafood,Farm Fresh,2 lb,lb,3.49
+336,Mussels in White Wine Sauce,Meat & Seafood,SeaDelights,1 lb,lb,11.49
+337,Beef Flank Steak,Meat & Seafood,PrimeCuts,1.5 lb,lb,10.99
+338,Salmon Fillets,Meat & Seafood,SeaBest,2 lb,lb,13.99
+339,Veal Tenderloin,Meat & Seafood,Premium Meats,1 lb,lb,20.49
+340,Premium Fresh Atlantic Salmon Fillet,Meat & Seafood,Premium Choice,1 lb,lb,13.52
+341,Fresh Atlantic Salmon Fillet,Meat & Seafood,Store Brand,1 lb,lb,14.25
+342,Original Beef Flank Steak,Meat & Seafood,Value Brand,1.5 lb,lb,10.53
+343,Beef Flank Steak,Meat & Seafood,Premium Choice,1.6 lb,lb,7.74
+344,Ground Turkey,Meat & Seafood,Farmstead,1 lb,lb,3.08
+345,Chicken Drumsticks,Meat & Seafood,Fresh Select,2.9 lb,lb,1.86
+346,Chicken Drumsticks,Meat & Seafood,Store Brand,3.4 lb,lb,1.5
+347,Fresh Shrimp Prawns,Meat & Seafood,SeaFresh,0.9 lb,lb,9.83
+348,Fresh Shrimp Prawns,Meat & Seafood,Premium Choice,1.4 lb,lb,11.58
+349,Original Lobster Tails,Meat & Seafood,SeaDelights,2 count,each,30.34
+350,Lobster Tails,Meat & Seafood,Value Brand,2 count,each,29.54
+351,Extra Boneless Skinless Chicken Breast,Meat & Seafood,Value Brand,1.8 lb,lb,5.77
+352,Fresh Atlantic Salmon Fillet,Meat & Seafood,SeaChoice,16 oz,oz,9.99
+353,All-Natural Chicken Breasts,Meat & Seafood,Farm Fresh,2 lb,lb,8.49
+354,Beef Sirloin Steak,Meat & Seafood,PrimeCut,1.5 lb,lb,12.99
+355,Pork Chops,Meat & Seafood,Porky’s,1.5 lb,lb,6.99
+356,Ground Turkey,Meat & Seafood,HealthyMeat,1 lb,lb,4.79
+357,Fresh Shrimp Prawns,Meat & Seafood,SeaDelights,12 oz,oz,10.49
+358,Deli Roast Beef,Meat & Seafood,DeliFresh,8 oz,oz,7.99
+359,Lamb Shoulder Roast,Meat & Seafood,MeatMasters,3 lb,lb,11.49
+360,Smoked Salmon Slices,Meat & Seafood,OceanDelights,4 oz,oz,14.99
+361,Beef Ground Chuck,Meat & Seafood,PrimeCut,1 lb,lb,5.49
+362,Chicken Drumsticks,Meat & Seafood,FarmFresh,2.5 lb,lb,1.99
+363,Wild Caught Cod Fillet,Meat & Seafood,SeaChoice,12 oz,oz,8.49
+364,Pork Sausages,Meat & Seafood,Porky’s,1 lb,lb,4.29
+365,Veal Cutlets,Meat & Seafood,MeatMasters,1.5 lb,lb,13.99
+366,Fresh Duck Breast,Meat & Seafood,GourmetMeat,1 lb,lb,15.99
+367,Salmon Burgers,Meat & Seafood,SeaDelights,6 oz,oz,7.49
+368,Beef Ribs,Meat & Seafood,PrimeCut,3 lb,lb,10.99
+369,Turkey Bacon,Meat & Seafood,HealthyMeat,12 oz,oz,5.99
+370,Fresh Clams,Meat & Seafood,OceanFresh,1 lb,lb,8.99
+371,Lamb Chops,Meat & Seafood,MeatMasters,1.5 lb,lb,14.49
+372,Chicken Wings,Meat & Seafood,FarmFresh,2 lb,lb,3.49
+373,Fresh Mackerel Fillets,Meat & Seafood,SeaChoice,12 oz,oz,7.99
+374,Pork Tenderloin,Meat & Seafood,Porky’s,1.5 lb,lb,8.99
+375,Ground Beef Organic,Meat & Seafood,OrganicMeats,1 lb,lb,6.49
+376,Fresh Oysters,Meat & Seafood,OceanFresh,1 dozen,count,12.99
+377,Cornish Game Hen,Meat & Seafood,GourmetMeat,2 lb,lb,9.49
+378,Beef Short Ribs,Meat & Seafood,PrimeCut,3 lb,lb,11.99
+379,Salmon Fillets Skinless,Meat & Seafood,SeaChoice,16 oz,oz,10.49
+380,Venison Steaks,Meat & Seafood,WildGame,1.5 lb,lb,20.99
+381,Kielbasa Sausages,Meat & Seafood,Porky’s,14 oz,oz,4.59
+382,Fresh Crab Legs,Meat & Seafood,OceanDelights,1.5 lb,lb,16.49
+383,Turkey Roast,Meat & Seafood,HealthyMeat,4 lb,lb,7.99
+384,Smoked Haddock,Meat & Seafood,SeaChoice,12 oz,oz,9.49
+385,Classic Chicken Wings,Meat & Seafood,Store Brand,2.0 lb,lb,4.49
+386,Chicken Wings,Meat & Seafood,Fresh Select,2.9 lb,lb,2.53
+387,Salmon Fillets Skinless,Meat & Seafood,Fresh Select,23.5 oz,oz,12.45
+388,Kielbasa Sausages,Meat & Seafood,Value Brand,18.1 oz,oz,4.59
+389,Lamb Chops,Meat & Seafood,Premium Choice,2.0 lb,lb,10.6
+390,Salmon Burgers,Meat & Seafood,Store Brand,6.4 oz,oz,9.07
+391,Salmon Burgers,Meat & Seafood,Value Brand,7.2 oz,oz,6.82
+392,Beef Sirloin Steak,Meat & Seafood,Store Brand,1.6 lb,lb,15.43
+393,Beef Sirloin Steak,Meat & Seafood,PrimeCut,1.5 lb,lb,13.2
+394,Fresh Crab Legs,Meat & Seafood,Store Brand,1.4 lb,lb,20.92
+395,Fresh Crab Legs,Meat & Seafood,Value Brand,1.5 lb,lb,16.57
+396,Fresh Atlantic Salmon Fillets,Meat & Seafood,SeaBest,16 oz,oz,8.99
+397,Organic Ground Beef,Meat & Seafood,Nature's Choice,1 lb,lb,5.49
+398,Boneless Skinless Chicken Breasts,Meat & Seafood,Perdue,2 lb,lb,4.79
+399,Pork Chops,Meat & Seafood,Smithfield,1.5 lb,lb,3.99
+400,Lobster Tails,Meat & Seafood,Seafood Co.,8 oz,oz,15.99
+401,Deli Sliced Roast Turkey,Meat & Seafood,Boar's Head,0.5 lb,lb,9.49
+402,Fresh Shrimp Prawns,Meat & Seafood,Pacific Seafood,1 lb,lb,11.99
+403,Beef Sirloin Steak,Meat & Seafood,Local Butcher,12 oz,oz,9.29
+404,Ground Turkey,Meat & Seafood,Hormel,1 lb,lb,3.89
+405,Fresh Duck Breast,Meat & Seafood,Gourmet Poultry,0.75 lb,lb,14.5
+406,Smoked Salmon Slices,Meat & Seafood,St. James Smokehouse,4 oz,oz,12.99
+407,Canned Tuna in Olive Oil,Meat & Seafood,Wild Planet,5 oz,oz,3.49
+408,Fresh Ground Turkey,Meat & Seafood,Hormel,1 lb,lb,3.89
+409,Pork Chops,Meat & Seafood,Value Brand,1.5 lb,lb,4.59
+410,Kraft Since,Pantry Staples,Kraft,16 oz,oz,4.75
+411,Quaker Offer,Pantry Staples,Quaker,24 oz,oz,8.62
+412,Quaker Sense,Pantry Staples,Quaker,24 oz,oz,9.67
+413,Quaker Discussion,Pantry Staples,Quaker,16 oz,oz,9.91
+414,Kraft Grow,Pantry Staples,Kraft,12 oz,oz,8.23
+415,General Mills Everything,Pantry Staples,General Mills,12 oz,oz,8.97
+416,Hunt's Capital,Pantry Staples,Hunt's,12 oz,oz,9.51
+417,General Mills Dark,Pantry Staples,General Mills,16 oz,oz,10.23
+418,Hunt's Spring,Pantry Staples,Hunt's,32 oz,oz,10.79
+419,Hunt's Commercial,Pantry Staples,Hunt's,12 oz,oz,5.66
+420,General Mills Write,Pantry Staples,General Mills,32 oz,oz,11.94
+421,General Mills Common,Pantry Staples,General Mills,12 oz,oz,4.85
+422,Hunt's Special,Pantry Staples,Hunt's,16 oz,oz,2.94
+423,General Mills White,Pantry Staples,General Mills,16 oz,oz,9.47
+424,Quaker Usually,Pantry Staples,Quaker,12 oz,oz,11.01
+425,Hunt's Employee,Pantry Staples,Hunt's,16 oz,oz,10.27
+426,Quaker Later,Pantry Staples,Quaker,24 oz,oz,4.0
+427,Hunt's Benefit,Pantry Staples,Hunt's,16 oz,oz,5.91
+428,Quaker Pick,Pantry Staples,Quaker,12 oz,oz,10.29
+429,Quaker Social,Pantry Staples,Quaker,12 oz,oz,8.14
+430,Kraft Put,Pantry Staples,Kraft,24 oz,oz,6.01
+431,General Mills Everyone,Pantry Staples,General Mills,32 oz,oz,3.47
+432,Hunt's Claim,Pantry Staples,Hunt's,24 oz,oz,2.21
+433,Hunt's Why,Pantry Staples,Hunt's,32 oz,oz,1.96
+434,Quaker Unit,Pantry Staples,Quaker,24 oz,oz,9.35
+435,General Mills Effect,Pantry Staples,General Mills,24 oz,oz,4.03
+436,Hunt's Often,Pantry Staples,Hunt's,24 oz,oz,2.9
+437,General Mills Notice,Pantry Staples,General Mills,24 oz,oz,10.04
+438,Kraft Rate,Pantry Staples,Kraft,32 oz,oz,8.13
+439,Kraft Nation,Pantry Staples,Kraft,32 oz,oz,1.89
+440,Kraft Once,Pantry Staples,Kraft,16 oz,oz,10.8
+441,General Mills Give,Pantry Staples,General Mills,32 oz,oz,11.89
+442,Quaker Several,Pantry Staples,Quaker,12 oz,oz,9.41
+443,Kraft Investment,Pantry Staples,Kraft,24 oz,oz,10.55
+444,Hunt's Shoulder,Pantry Staples,Hunt's,24 oz,oz,2.81
+445,Kraft Rate,Pantry Staples,Fresh Select,26.5 oz,oz,8.13
+446,Original Kraft Rate,Pantry Staples,Kraft,47.6 oz,oz,8.13
+447,General Mills Effect,Pantry Staples,Value Brand,24 oz,oz,4.29
+448,Organic General Mills Effect,Pantry Staples,Store Brand,30.0 oz,oz,5.12
+449,Hunt's Often,Pantry Staples,Hunt's,32.0 oz,oz,2.95
+450,Hunt's Often,Pantry Staples,Value Brand,24 oz,oz,2.35
+451,Hunt's Claim,Pantry Staples,Premium Choice,24 oz,oz,2.36
+452,Quaker Social,Pantry Staples,Value Brand,12 oz,oz,10.09
+453,Natural Quaker Social,Pantry Staples,Premium Choice,12 oz,oz,8.38
+454,Quaker Sense,Pantry Staples,Quaker,24 oz,oz,11.37
+455,Kraft Put,Pantry Staples,Kraft,24 oz,oz,5.99
+456,General Mills Common,Pantry Staples,Value Brand,12 oz,oz,4.3
+457,Natural General Mills Common,Pantry Staples,General Mills,16.1 oz,oz,4.85
+458,Granulated Sugar,Pantry Staples,PureSweet,4 lb,lb,1.99
+459,All-Purpose Flour,Pantry Staples,Baker's Choice,5 lb,lb,2.49
+460,Extra Virgin Olive Oil,Pantry Staples,Oliva Bella,16 oz,oz,5.99
+461,Pure Maple Syrup,Pantry Staples,Maple Grove,12 oz,oz,8.49
+462,Sea Salt,Pantry Staples,SaltWorks,26 oz,oz,2.79
+463,Black Peppercorns,Pantry Staples,Spice World,3 oz,oz,3.99
+464,Dried Basil,Pantry Staples,Herbal Essence,0.75 oz,oz,1.29
+465,Canned Chickpeas,Pantry Staples,Goya,15 oz,oz,1.19
+466,Canned Tomato Sauce,Pantry Staples,Hunt's,15 oz,oz,0.99
+467,Long Grain White Rice,Pantry Staples,Sunshine,2 lb,lb,1.49
+468,Pasta Spaghetti,Pantry Staples,Barilla,16 oz,oz,1.29
+469,Peanut Butter Creamy,Pantry Staples,Skippy,16 oz,oz,2.49
+470,Honey,Pantry Staples,Nature's Nectar,12 oz,oz,6.99
+471,Balsamic Vinegar,Pantry Staples,Colavita,8.5 oz,oz,4.49
+472,Coconut Milk,Pantry Staples,Thai Kitchen,13.5 oz,oz,1.89
+473,Rolled Oats,Pantry Staples,Quaker,42 oz,oz,3.49
+474,Vegetable Broth,Pantry Staples,Swanson,32 oz,oz,1.79
+475,Soy Sauce,Pantry Staples,Kikkoman,10 fl oz,ml,2.99
+476,Canned Corn,Pantry Staples,Del Monte,15 oz,oz,0.89
+477,Vegetable Oil,Pantry Staples,Crisco,48 fl oz,ml,3.59
+478,Worcestershire Sauce,Pantry Staples,Lea & Perrins,10 fl oz,ml,4.29
+479,Canned Green Beans,Pantry Staples,Del Monte,14.5 oz,oz,0.99
+480,Cooking Cocoa Powder,Pantry Staples,Hershey's,8 oz,oz,2.79
+481,Sesame Seeds,Pantry Staples,Spice World,3 oz,oz,2.49
+482,Oats Cookies,Pantry Staples,Nature's Bakery,6 oz,oz,3.99
+483,Lentils Red,Pantry Staples,Goya,16 oz,oz,1.59
+484,Cornstarch,Pantry Staples,Argo,16 oz,oz,1.99
+485,Vegetarian Chili Beans,Pantry Staples,Bush's,15 oz,oz,1.09
+486,Molasses,Pantry Staples,Grandma's,16 fl oz,ml,4.79
+487,Curry Powder,Pantry Staples,McCormick,1.25 oz,oz,2.29
+488,Apple Cider Vinegar,Pantry Staples,Bragg,16 fl oz,ml,3.99
+489,Canned Mushrooms,Pantry Staples,Mushroom Heaven,4 oz,oz,1.19
+490,Sun-Dried Tomatoes,Pantry Staples,Bella Sun Luci,3.1 oz,oz,4.59
+491,Vegetable Stock Cubes,Pantry Staples,Knorr,8 cubes,each,0.89
+492,Classic Peanut Butter Creamy,Pantry Staples,Premium Choice,16.2 oz,oz,2.49
+493,Premium Peanut Butter Creamy,Pantry Staples,Premium Choice,16 oz,oz,2.98
+494,Rolled Oats,Pantry Staples,Fresh Select,42 oz,oz,4.3
+495,Premium Rolled Oats,Pantry Staples,Premium Choice,57.3 oz,oz,3.07
+496,Worcestershire Sauce,Pantry Staples,Fresh Select,10.4 fl oz,ml,5.22
+497,Cornstarch,Pantry Staples,Argo,17.0 oz,oz,1.77
+498,Cornstarch,Pantry Staples,Value Brand,13.4 oz,oz,1.99
+499,Canned Corn,Pantry Staples,Value Brand,15 oz,oz,0.89
+500,Fresh Canned Corn,Pantry Staples,Value Brand,17.4 oz,oz,0.99
+501,Oats Cookies,Pantry Staples,Nature's Bakery,6.3 oz,oz,3.98
+502,Natural Oats Cookies,Pantry Staples,Fresh Select,4.8 oz,oz,3.11
+503,Vegetable Broth,Pantry Staples,Fresh Select,38.2 oz,oz,1.56
+504,Premium Vegetable Broth,Pantry Staples,Premium Choice,32 oz,oz,1.91
+505,Molasses,Pantry Staples,Premium Choice,16.9 fl oz,ml,5.08
+506,Molasses,Pantry Staples,Store Brand,16.5 fl oz,ml,4.67
+507,Great Value All-Purpose Flour,Pantry Staples,Great Value,5 lb,lb,1.5
+508,Barilla Spaghetti Pasta,Pantry Staples,Barilla,16 oz,oz,0.8
+509,Coca-Cola Classic,Pantry Staples,Coca-Cola,2 L,ml,0.5
+510,Coca-Cola Classic,Pantry Staples,Coca-Cola,2.2 L,ml,0.99
+511,Coca-Cola Classic,Pantry Staples,Fresh Select,2 L,ml,0.99
+512,Lay's Classic Potato Chips,Snacks,Lay's,8 oz,oz,3.49
+513,Doritos Nacho Cheese,Snacks,Doritos,9.25 oz,oz,4.29
+514,Cheddar Jack Snack Crackers,Snacks,Triscuit,5.5 oz,oz,2.99
+515,Planters Salted Peanuts,Snacks,Planters,16 oz,oz,4.99
+516,Nature Valley Crunchy Granola Bars,Snacks,Nature Valley,12 bars,each,3.99
+517,Goldfish Cheddar Crackers,Snacks,Pepperidge Farm,6 oz,oz,2.49
+518,Planters Dry Roasted Almonds,Snacks,Planters,12 oz,oz,6.49
+519,Pringles Original Potato Chips,Snacks,Pringles,5.75 oz,oz,3.59
+520,Haribo Goldbears Gummy Bears,Snacks,Haribo,5 oz,oz,2.99
+521,Keebler Club Crackers,Snacks,Keebler,9.1 oz,oz,3.49
+522,Blue Diamond Almonds Wasabi & Soy,Snacks,Blue Diamond,4 oz,oz,3.99
+523,Pretzel Crisps Multigrain,Snacks,Pretzel Crisps,4.2 oz,oz,2.99
+524,Cheetos Flamin' Hot,Snacks,Cheetos,8 oz,oz,3.99
+525,Nature's Garden Trail Mix,Snacks,Nature's Garden,10 oz,oz,5.49
+526,Ritz Original Crackers,Snacks,Ritz,13.7 oz,oz,4.49
+527,SunChips Multigrain Chips,Snacks,SunChips,8 oz,oz,3.69
+528,Mini Babybel Cheese Snacks,Snacks,Babybel,10 oz,oz,6.99
+529,Clif Bar Energy Bars,Snacks,Clif,12 bars,each,4.79
+530,Triscuit Whole Grain Crackers,Snacks,Triscuit,7 oz,oz,2.89
+531,Snyder's Pretzels,Snacks,Snyder's,16 oz,oz,3.99
+532,M&M's Peanut Chocolate Candies,Snacks,M&M's,10.7 oz,oz,6.49
+533,PopCorners Kettle Corn,Snacks,PopCorners,4.2 oz,oz,2.79
+534,Nature Valley Sweet & Salty Nut Granola Bars,Snacks,Nature Valley,5 bars,each,2.99
+535,Lorna Doone Shortbread Cookies,Snacks,Lorna Doone,10 oz,oz,2.89
+536,Cocoa Puffs Snack Mix,Snacks,General Mills,6 oz,oz,3.49
+537,Kraft Cheddar Snack Sticks,Snacks,Kraft,7 oz,oz,4.19
+538,Good & Gather Organic Trail Mix,Snacks,Target,8 oz,oz,4.99
+539,Veggie Straws Original,Snacks,Calbee,4 oz,oz,2.69
+540,Wavy Lay's Classic Chips,Snacks,Lay's,8 oz,oz,3.49
+541,Teddy Grahams Honey Grahams,Snacks,Nabisco,8 oz,oz,2.99
+542,Baked Lay's Oven B Chips,Snacks,Lay's,7 oz,oz,3.69
+543,Haribo Goldbears Gummy Bears,Snacks,Premium Choice,5.4 oz,oz,2.99
+544,Natural Keebler Club Crackers,Snacks,Keebler,9.1 oz,oz,2.73
+545,Keebler Club Crackers,Snacks,Keebler,9.7 oz,oz,3.49
+546,Nature Valley Sweet & Salty Nut Granola Bars,Snacks,Premium Choice,5 bars,each,2.54
+547,Nature Valley Sweet & Salty Nut Granola Bars,Snacks,Premium Choice,5 bars,each,3.33
+548,PopCorners Kettle Corn,Snacks,Premium Choice,5.0 oz,oz,3.45
+549,PopCorners Kettle Corn,Snacks,Value Brand,4.2 oz,oz,2.53
+550,Premium Lay's Classic Potato Chips,Snacks,Lay's,11.0 oz,oz,3.62
+551,Fresh Lay's Classic Potato Chips,Snacks,Value Brand,10.2 oz,oz,3.78
+552,SunChips Multigrain Chips,Snacks,SunChips,10.7 oz,oz,3.8
+553,SunChips Multigrain Chips,Snacks,Fresh Select,7.5 oz,oz,3.69
+554,Planters Salted Peanuts,Snacks,Planters,19.2 oz,oz,5.66
+555,Lay's Classic Potato Chips,Snacks,Lay's,8 oz,oz,3.49
+556,Doritos Nacho Cheese,Snacks,Doritos,9.75 oz,oz,3.99
+557,Cheddar Jack Flavored Crackers,Snacks,Triscuit,5 oz,oz,2.99
+558,Planters Salted Peanuts,Snacks,Planters,16 oz,oz,4.49
+559,Goldfish Cheddar Snacks,Snacks,Pepperidge Farm,6.6 oz,oz,2.79
+560,Nature Valley Granola Bars,Snacks,Nature Valley,12 bars,each,4.99
+561,Lay's Wavy Original Chips,Snacks,Lay's,8 oz,oz,3.49
+562,Pringles Original Potato Chips,Snacks,Pringles,5.4 oz,oz,3.89
+563,Nature's Path Organic Crispy Rice Bars,Snacks,Nature's Path,5 oz,oz,3.49
+564,Tortilla Chips Multigrain,Snacks, Santitas,10 oz,oz,2.99
+565,Snyder's Pretzel Sticks,Snacks,Snyder's,12 oz,oz,3.29
+566,Haribo Goldbears Gummy Bears,Snacks,Haribo,5 oz,oz,1.99
+567,Keebler Club Crackers,Snacks,Keebler,9 oz,oz,2.99
+568,Bugles Original Snack,Snacks,Frito-Lay,4 oz,oz,1.89
+569,Pixy Stix Candy,Snacks,Wonka,1.5 oz,oz,0.99
+570,Pepperoni Snack Stick,Snacks,Jack Link's,2 oz,oz,1.49
+571,Trail Mix Mix,Snacks,Blue Diamond,10 oz,oz,5.99
+572,Cheetos Crunchy Flamin' Hot,Snacks,Cheetos,8 oz,oz,3.49
+573,Mini Pretzels,Snacks,Snyder's,16 oz,oz,3.99
+574,Kraft Handi-Snacks Crackers & Cheese,Snacks,Kraft,3.1 oz,oz,1.49
+575,Lorna Doone Shortbread Cookies,Snacks,Lorna Doone,8 oz,oz,2.99
+576,SunChips Multigrain Chips,Snacks,SunChips,9 oz,oz,3.79
+577,Ritz Crackers,Snacks,Ritz,12 oz,oz,3.99
+578,Skittles Original Candy,Snacks,Mars,2 oz,oz,0.89
+579,Nature Valley Sweet & Salty Nut Granola Bars,Snacks,Nature Valley,5 oz,oz,3.49
+580,Doritos Cool Ranch,Snacks,Doritos,9.75 oz,oz,3.99
+581,Goldfish Cheddar Buffs,Snacks,Pepperidge Farm,6.6 oz,oz,2.79
+582,Kettle Brand Potato Chips,Snacks,Kettle Brand,8 oz,oz,4.49
+583,Fritos Original Corn Chips,Snacks,Frito-Lay,9 oz,oz,3.59
+584,M&M's Peanut Candy,Snacks,Mars,1.74 oz,oz,0.99
+585,Pop Secret Movie Theater Butter Popcorn,Snacks,Pop Secret,3 oz,oz,1.49
+586,Almonds Roasted & Salted,Snacks,Blue Diamond,6 oz,oz,4.99
+587,Natural Pringles Original Potato Chips,Snacks,Store Brand,7.1 oz,oz,4.4
+588,Pringles Original Potato Chips,Snacks,Pringles,7.2 oz,oz,4.72
+589,Kraft Handi-Snacks Crackers & Cheese,Snacks,Store Brand,2.7 oz,oz,1.49
+590,Kraft Handi-Snacks Crackers & Cheese,Snacks,Kraft,3.3 oz,oz,1.28
+591,Snyder's Pretzel Sticks,Snacks,Premium Choice,12 oz,oz,2.54
+592,Nature Valley Granola Bars,Snacks,Premium Choice,12 bars,each,6.31
+593,Nature Valley Granola Bars,Snacks,Value Brand,13.4 bars,each,4.99
+594,Mini Pretzels,Snacks,Snyder's,16 oz,oz,3.99
+595,Extra Mini Pretzels,Snacks,Store Brand,18.7 oz,oz,4.99
+596,Kettle Brand Potato Chips,Snacks,Value Brand,11.2 oz,oz,4.98
+597,Pepperoni Snack Stick,Snacks,Fresh Select,2 oz,oz,1.5
+598,Premium Pepperoni Snack Stick,Snacks,Fresh Select,2 oz,oz,1.06
+599,Lay's Classic Potato Chips,Snacks,Lay's,8 oz,oz,3.49
+600,Kraft Cheddar Crackers,Snacks,Kraft,6.5 oz,oz,2.99
+601,Doritos Nacho Cheese,Snacks,Doritos,9.75 oz,oz,4.29
+602,Nature Valley Crunchy Granola Bars,Snacks,Nature Valley,12 bars,count,0.89
+603,Haribo Goldbears Gummy Bears,Snacks,Haribo,5 oz,oz,2.49
+604,Planters Salted Peanuts,Snacks,Planters,16 oz,oz,4.59
+605,Pringles Original Potato Chips,Snacks,Pringles,5.5 oz,oz,2.99
+606,Tate's Bake Shop Chocolate Chip Cookies,Snacks,Tate's,7 oz,oz,4.49
+607,Cheez-It Original Crackers,Snacks,Cheez-It,8 oz,oz,2.79
+608,Blue Diamond Almonds,Snacks,Blue Diamond,10 oz,oz,6.99
+609,Popcorners Gourmet Chips,Snacks,Popcorners,5 oz,oz,3.49
+610,Clif Bars Energy Bar,Snacks,Clif,12 bars,count,1.5
+611,Pocky Chocolate Biscuit Sticks,Snacks,Glico,3.1 oz,oz,2.19
+612,Pringles Original Potato Chips,Snacks,Pringles,8.0 oz,oz,2.83
+613,Clif Bars Energy Bar,Snacks,Fresh Select,17.3 bars,count,1.12
+614,Clif Bars Energy Bar,Snacks,Clif,16.8 bars,count,1.94
+615,Coca-Cola Classic,Beverages,Coca-Cola,12 fl oz,ml,0.99
+616,Pepsi Max,Beverages,Pepsi,16 fl oz,ml,1.09
+617,Lipton Iced Tea Lemon,Beverages,Lipton,1.5 L,ml,1.29
+618,Red Bull Energy Drink,Beverages,Red Bull,8.4 fl oz,ml,2.1
+619,Arizona Green Tea,Beverages,Arizona,23 fl oz,ml,1.5
+620,Fanta Orange Soda,Beverages,Fanta,12 fl oz,ml,0.99
+621,Sprite Lemon Lime,Beverages,Sprite,12 fl oz,ml,0.99
+622,Gatorade Thirst Quencher,Beverages,Gatorade,32 fl oz,ml,1.49
+623,Vitaminwater Essential,Beverages,Vitaminwater,20 fl oz,ml,1.69
+624,Honest Tea Lemon,Beverages,Honest Tea,16 fl oz,ml,1.89
+625,LaCroix Sparkling Water,Beverages,LaCroix,12 fl oz,ml,0.99
+626,Brahma Beer,Beverages,Brahma,12 fl oz,ml,1.5
+627,Heineken Lager,Beverages,Heineken,12 fl oz,ml,1.75
+628,Bud Light Beer,Beverages,Budweiser,12 fl oz,ml,1.5
+629,Corona Extra,Beverages,Corona,12 fl oz,ml,1.8
+630,Miller Lite Beer,Beverages,Miller,12 fl oz,ml,1.6
+631,Asahi Super Dry,Beverages,Asahi,12 fl oz,ml,2.0
+632,Sapporo Premium Beer,Beverages,Sapporo,12 fl oz,ml,2.1
+633,Tropicana Orange Juice,Beverages,Tropicana,64 fl oz,ml,3.99
+634,Simply Apple Juice,Beverages,Simply,64 fl oz,ml,3.89
+635,Ocean Spray Cranberry Juice,Beverages,Ocean Spray,64 fl oz,ml,4.29
+636,Minute Maid Lemonade,Beverages,Minute Maid,59 fl oz,ml,3.59
+637,V8 Vegetable Juice,Beverages,V8,46 fl oz,ml,3.49
+638,Poland Spring Sparkling Water,Beverages,Poland Spring,12 fl oz,ml,0.99
+639,San Pellegrino Sparkling Water,Beverages,San Pellegrino,16.9 fl oz,ml,1.5
+640,Nestlé Pure Life Bottled Water,Beverages,Nestlé,16.9 fl oz,ml,0.89
+641,Dasani Bottled Water,Beverages,Dasani,20 fl oz,ml,0.99
+642,Aquafina Bottled Water,Beverages,Aquafina,16.9 fl oz,ml,0.89
+643,Yakult Probiotic Drink,Beverages,Yakult,2 fl oz,ml,0.75
+644,Kombucha Ginger Lemon,Beverages,GT's,16 fl oz,ml,3.99
+645,LaCroix Mango,Beverages,LaCroix,12 fl oz,ml,0.99
+646,Appletiser Sparkling Apple,Beverages,Appletiser,12 fl oz,ml,1.5
+647,Original Corona Extra,Beverages,Store Brand,9.9 fl oz,ml,2.02
+648,Aquafina Bottled Water,Beverages,Value Brand,22.4 fl oz,ml,0.99
+649,Dasani Bottled Water,Beverages,Dasani,20 fl oz,ml,1.05
+650,Classic Poland Spring Sparkling Water,Beverages,Value Brand,12 fl oz,ml,0.99
+651,Poland Spring Sparkling Water,Beverages,Poland Spring,12 fl oz,ml,0.99
+652,V8 Vegetable Juice,Beverages,Store Brand,46 fl oz,ml,3.49
+653,V8 Vegetable Juice,Beverages,V8,50.2 fl oz,ml,3.23
+654,Sapporo Premium Beer,Beverages,Value Brand,15.5 fl oz,ml,2.1
+655,Sapporo Premium Beer,Beverages,Fresh Select,10.7 fl oz,ml,1.73
+656,Fanta Orange Soda,Beverages,Fanta,15.7 fl oz,ml,0.99
+657,Fanta Orange Soda,Beverages,Store Brand,16.0 fl oz,ml,1.02
+658,Coca-Cola Classic,Beverages,Coca-Cola,12 fl oz,oz,0.5
+659,Pepsi Cola,Beverages,Pepsi,16 fl oz,oz,0.6
+660,Sprite Lemon Lime Soda,Beverages,Sprite,12 fl oz,oz,0.55
+661,Diet Coke,Beverages,Coca-Cola,12 fl oz,oz,0.5
+662,Mountain Dew,Beverages,Mountain Dew,16 fl oz,oz,0.65
+663,Dr Pepper,Beverages,Dr Pepper,12 fl oz,oz,0.55
+664,Nestea Lemon Iced Tea,Beverages,Nestea,16 fl oz,oz,0.6
+665,Red Bull Energy Drink,Beverages,Red Bull,8.4 fl oz,oz,2.0
+666,Monster Energy Drink,Beverages,Monster,16 fl oz,oz,2.5
+667,"Lipton Iced Tea, Lemon",Beverages,Lipton,20 fl oz,oz,0.75
+668,Arizona Green Tea,Beverages,Arizona,23 fl oz,oz,1.0
+669,Gatorade Thirst Quencher,Beverages,Gatorade,32 fl oz,oz,1.25
+670,Powerade Mountain Berry,Beverages,Powerade,20 fl oz,oz,0.85
+671,Vitaminwater Zero,Beverages,Vitaminwater,20 fl oz,oz,1.5
+672,Simply Orange Orange Juice,Beverages,Simply,16 fl oz,oz,2.0
+673,Tropicana Pure Premium Orange Juice,Beverages,Tropicana,15 fl oz,oz,2.5
+674,Minute Maid Lemonade,Beverages,Minute Maid,16 fl oz,oz,1.2
+675,V8 Vegetable Juice,Beverages,V8,10 fl oz,oz,1.75
+676,LaCroix Sparkling Water,Beverages,LaCroix,12 fl oz,oz,0.75
+677,San Pellegrino Sparkling Mineral Water,Beverages,San Pellegrino,25 fl oz,oz,2.0
+678,Poland Spring Sparkling Water,Beverages,Poland Spring,12 fl oz,oz,0.8
+679,"Pure Leaf Iced Tea, Sweetened",Beverages,Pure Leaf,18.5 fl oz,oz,1.5
+680,Snapple Lemon Tea,Beverages,Snapple,16 fl oz,oz,1.2
+681,"Honest Tea, Green Tea",Beverages,Honest Tea,16 fl oz,oz,1.5
+682,La Croix Coconut Sparkling Water,Beverages,LaCroix,12 fl oz,oz,0.75
+683,Bai Antioxidant Infused Water,Beverages,Bai,18 fl oz,oz,2.0
+684,Kombucha Ginger Lemon,Beverages,GT's Kombucha,16 fl oz,oz,3.5
+685,"Bottled Water, Spring",Beverages,Arrowhead,24 fl oz,oz,0.7
+686,Almond Milk Chocolate Drink,Beverages,Almond Breeze,8 fl oz,oz,1.5
+687,Soy Milk Vanilla,Beverages,Silk,32 fl oz,oz,3.0
+688,Coconut Water,Beverages,Vita Coco,17 fl oz,oz,2.5
+689,Kool-Aid Tropical Punch,Beverages,Kool-Aid,0.13 oz,count,0.1
+690,Hawaiian Punch Fruit Juicy Red,Beverages,Hawaiian Punch,59 fl oz,oz,2.5
+691,Powerade Mountain Berry,Beverages,Fresh Select,20 fl oz,oz,0.99
+692,Powerade Mountain Berry,Beverages,Value Brand,20 fl oz,oz,0.99
+693,"Lipton Iced Tea, Lemon",Beverages,Value Brand,21.3 fl oz,oz,0.75
+694,"Lipton Iced Tea, Lemon",Beverages,Premium Choice,27.5 fl oz,oz,0.75
+695,Red Bull Energy Drink,Beverages,Premium Choice,11.0 fl oz,oz,2.5
+696,Premium Red Bull Energy Drink,Beverages,Store Brand,11.7 fl oz,oz,2.38
+697,Original Bai Antioxidant Infused Water,Beverages,Value Brand,16.3 fl oz,oz,1.95
+698,Bai Antioxidant Infused Water,Beverages,Fresh Select,18 fl oz,oz,2.04
+699,Coca-Cola Classic,Beverages,Premium Choice,12.0 fl oz,oz,0.99
+700,Nestea Lemon Iced Tea,Beverages,Store Brand,15.5 fl oz,oz,0.99
+701,Diet Coke,Beverages,Fresh Select,11.6 fl oz,oz,0.99
+702,Organic Diet Coke,Beverages,Store Brand,12.8 fl oz,oz,0.99
+703,Coca-Cola Classic,Beverages,Coca-Cola,12 fl oz,oz,0.5
+704,Pepsi Max,Beverages,Pepsi,16 fl oz,oz,0.45
+705,Lipton Iced Tea,Beverages,Lipton,1.5 L,L,1.5
+706,Nestlé Pure Life Bottled Water,Beverages,Nestlé,24 fl oz,oz,0.6
+707,Red Bull Energy Drink,Beverages,Red Bull,8.4 fl oz,oz,2.0
+708,Arizona Iced Tea,Beverages,Arizona,23 fl oz,oz,1.25
+709,Gatorade Thirst Quencher,Beverages,Gatorade,32 fl oz,oz,1.75
+710,Simply Orange Juice,Beverages,Simply Orange,52 fl oz,oz,3.99
+711,Pure Leaf Iced Tea,Beverages,Pure Leaf,18.5 fl oz,oz,1.75
+712,Vitaminwater Zero,Beverages,Vitaminwater,20 fl oz,oz,1.5
+713,LaCroix Sparkling Water,Beverages,LaCroix,12 fl oz,oz,0.75
+714,Monster Energy Drink,Beverages,Monster,16 fl oz,oz,2.25
+715,Simply Orange Juice,Beverages,Store Brand,52 fl oz,oz,4.09
+716,Simply Orange Juice,Beverages,Premium Choice,49.1 fl oz,oz,4.76
+717,Coca-Cola Classic,Beverages,Value Brand,16.7 fl oz,oz,0.99
+718,All-Purpose Cleaner,Household,CleanCo,32 oz,oz,3.49
+719,Liquid Dish Soap,Household,Dawn,16 oz,oz,2.99
+720,Laundry Detergent,Household,Tide,50 oz,oz,5.99
+721,Trash Bags,Household,Glad,15 count,count,4.49
+722,Paper Towels,Household,Bounty,6 rolls,each,7.99
+723,Toilet Paper,Household,Charmin,12 rolls,each,12.99
+724,Disinfectant Spray,Household,Lysol,19 oz,oz,4.49
+725,Sponges,Household,Scrub Daddy,4 pack,pack,3.99
+726,Steel Wool Scrubbers,Household,Scotch-Brite,5 count,count,2.49
+727,Microfiber Cloths,Household,Ecloth,3 pack,pack,8.99
+728,Floor Cleaner,Household,Swiffer,32 oz,oz,4.99
+729,Glass Cleaner,Household,Windex,23 oz,oz,3.29
+730,Furniture Polish,Household,Pledge,18 oz,oz,4.49
+731,Carpet Freshener,Household,Febreze,24 oz,oz,5.49
+732,Oven Cleaner,Household,Easy-Off,24 oz,oz,3.99
+733,Drain Opener,Household,Drano,32 oz,oz,4.99
+734,Bug Spray,Household,Off!,6 oz,oz,5.99
+735,Air Freshener Spray,Household,Febreze,9 oz,oz,3.89
+736,Laundry Stain Remover,Household,Shout,22 oz,oz,3.59
+737,Bleach,Household,Clorox,64 oz,oz,2.99
+738,Cleaning Wipes,Household,Clorox,75 wipes,each,3.49
+739,Squeegee,Household,OXO,1 each,each,6.99
+740,Lint Rollers,Household,Evercare,5 count,count,4.29
+741,Kitchen Trash Can,Household,Simplehuman,13 gal,each,29.99
+742,Vacuum Cleaner Bags,Household,Hoover,10 pack,pack,8.49
+743,Broom and Dustpan Set,Household,O-Cedar,1 set,each,12.99
+744,Mop Refill Pads,Household,O-Cedar,2 pack,pack,5.49
+745,Bucket,Household,Rubbermaid,5 gal,each,9.99
+746,Cleaning Gloves,Household,Ammex,100 pack,pack,7.49
+747,Lint Brush,Household,Evercare,1 each,each,4.99
+748,Shoe Shine Kit,Household,Kiwi,1 kit,each,6.49
+749,Clothespins,Household,Royal,50 count,count,2.59
+750,Furniture Dusting Spray,Household,Pledge,12 oz,oz,3.89
+751,Cleaning Brush Set,Household,OXO,3 pack,pack,8.99
+752,Spray Bottle,Household,Clorox,16 oz,oz,2.49
+753,Bleach,Household,Clorox,64 oz,oz,2.37
+754,Bleach,Household,Fresh Select,56.0 oz,oz,2.65
+755,Natural Spray Bottle,Household,Store Brand,17.8 oz,oz,2.35
+756,Spray Bottle,Household,Premium Choice,16 oz,oz,2.36
+757,Organic Kitchen Trash Can,Household,Value Brand,13 gal,each,25.83
+758,Original Clothespins,Household,Premium Choice,56.9 count,count,2.2
+759,Trash Bags,Household,Value Brand,13.4 count,count,4.21
+760,Trash Bags,Household,Premium Choice,16.5 count,count,4.49
+761,Oven Cleaner,Household,Value Brand,22.2 oz,oz,3.56
+762,Toilet Paper,Household,Charmin,12 rolls,each,11.28
+763,Toilet Paper,Household,Value Brand,14.2 rolls,each,13.38
+764,Extra Vacuum Cleaner Bags,Household,Hoover,13.6 pack,pack,8.49
+765,Vacuum Cleaner Bags,Household,Hoover,11.5 pack,pack,7.18
+766,All-Purpose Cleaner,Household,CleanHome,32 oz,oz,3.49
+767,Disinfectant Spray,Household,Lysol,19 oz,oz,4.99
+768,Laundry Detergent,Household,Tide,50 oz,oz,8.99
+769,Dish Soap,Household,Palmolive,25 oz,oz,2.49
+770,Furniture Polish,Household,Pledge,12 oz,oz,5.49
+771,Bathroom Cleaner,Household,Scrubbing Bubbles,24 oz,oz,3.99
+772,Microfiber Cleaning Cloths,Household,E-Cloth,6 pack,count,12.99
+773,Trash Bags,Household,Glad,30 count,count,10.49
+774,Sponges,Household,Scrub Daddy,4 pack,count,5.99
+775,Broom,Household,O-Cedar,1 each,each,15.99
+776,Dustpan and Brush Set,Household,Casabella,1 set,each,9.99
+777,Vacuum Cleaner Bags,Household,Hoover,4 pack,count,7.49
+778,Air Freshener Spray,Household,Febreze,8 oz,oz,4.29
+779,Fabric Softener,Household,Downy,40 oz,oz,4.99
+780,Lint Roller,Household,Scotch-Brite,1 each,each,6.49
+781,Toilet Brush,Household,Oxo,1 each,each,8.99
+782,Mop,Household,O-Cedar,1 each,each,19.99
+783,Bucket,Household,Rubbermaid,2 gal,gal,12.99
+784,Glass Cleaner,Household,Windex,23 oz,oz,3.59
+785,Wood Polish,Household,Pledge,12 oz,oz,5.49
+786,Oven Cleaner,Household,Easy-Off,24 oz,oz,4.79
+787,Lint Brush,Household,Evercare,1 each,each,4.49
+788,Duster,Household,Swiffer,1 each,each,9.99
+789,Cleaning Gloves,Household,Vileda,1 pair,pair,3.99
+790,Carpet Cleaner,Household,Resolve,22 oz,oz,4.59
+791,Squeegee,Household,OXO,1 each,each,7.49
+792,Recycling Bin,Household,Sterilite,10 gal,gal,14.99
+793,Laundry Basket,Household,Sterilite,1 each,each,9.49
+794,Clothespins,Household,Dritz,50 pack,count,3.29
+795,Swiffer Wet Mop Refill,Household,Swiffer,12 count,count,10.49
+796,Storage Trash Can,Household,Rubbermaid,13 gal,gal,24.99
+797,Cleaning Brush Set,Household,OXO,3 pack,count,6.99
+798,Fabric Softener,Household,Store Brand,46.3 oz,oz,5.23
+799,Fabric Softener,Household,Fresh Select,51.0 oz,oz,3.94
+800,Wood Polish,Household,Fresh Select,12 oz,oz,6.58
+801,Wood Polish,Household,Premium Choice,11.3 oz,oz,5.41
+802,Extra Squeegee,Household,Premium Choice,1.3 each,each,6.78
+803,Squeegee,Household,Value Brand,1.2 each,each,7.16
+804,Duster,Household,Value Brand,1 each,each,7.17
+805,Duster,Household,Fresh Select,1.3 each,each,11.5
+806,Clothespins,Household,Value Brand,46.9 pack,count,3.63
+807,Cleaning Gloves,Household,Fresh Select,1.0 pair,pair,3.99
+808,Organic Cleaning Gloves,Household,Vileda,1 pair,pair,4.26
+809,Vacuum Cleaner Bags,Household,Premium Choice,4.2 pack,count,6.99
+810,Vacuum Cleaner Bags,Household,Fresh Select,5.0 pack,count,8.14
+811,All-Purpose Cleaner,Household,CleanCo,32 oz,oz,3.49
+812,Multifunctional Disinfectant Wipes,Household,FreshGuard,75 count,count,4.99
+813,Heavy Duty Trash Bags,Household,ToughSeal,20 gal,each,8.49
+814,Laundry Detergent Liquid,Household,PureClean,64 oz,oz,6.99
+815,Microfiber Cleaning Cloths,Household,SparkleSoft,3 pack,each,5.99
+816,Glass & Surface Cleaner,Household,ShineBright,24 oz,oz,4.29
+817,Baking Soda,Household,PureBaking,1 lb,lb,1.29
+818,Multifunctional Disinfectant Wipes,Household,Fresh Select,75 count,count,4.99
